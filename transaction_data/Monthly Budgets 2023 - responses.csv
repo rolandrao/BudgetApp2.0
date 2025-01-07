@@ -1,0 +1,486 @@
+Timestamp,Category,Amount,Who paid?,Shared?,Notes
+1/1/2023 12:00:00,Bills,$30.00,Roland,Yes,Internet
+1/1/2023 12:00:00,Food,$6.00,Roland,Yes,7/11
+1/1/2023 12:00:00,Food,$24.62,Roland,Yes,Tasty Burger
+1/1/2023 12:00:00,Food,$37.35,Roland,Yes,7/11
+1/1/2023 12:00:00,Groceries,$114.00,Roland,Yes,Target
+1/1/2023 12:00:00,Food,$25.67,Roland,Yes,College Pizza
+1/1/2023 12:00:00,Groceries,$33.18,Roland,Yes,Target
+1/1/2023 12:00:00,Food,$50.00,Roland,Yes,Pavement
+1/1/2023 12:00:00,Food,$36.00,Roland,Yes,Time out
+1/1/2023 12:00:00,Food,$47.00,Roland,Yes,Sufra
+1/1/2023 12:00:00,Groceries,$36.00,Roland,Yes,Target
+1/1/2023 12:00:00,Food,$11.00,Roland,Yes,7/11
+1/1/2023 12:00:00,Food,$27.00,Roland,Yes,Drinks at Concert
+1/1/2023 12:00:00,Cat,$80.00,Roland,Yes,Petco
+1/1/2023 12:00:00,Cat,$387.00,Roland,Yes,Bruno himself
+1/1/2023 12:00:00,Bills,$450.00,Sarah,Yes,Monthly payment to M&D Olsen
+1/1/2023 12:00:00,Groceries,$125.00,Roland,Yes,Target
+1/1/2023 12:00:00,Groceries,$58.91,Sarah,Yes,Everyplate
+1/1/2023 12:00:00,Food,$16.00,Roland,Yes,7/11
+1/1/2023 12:00:00,Shopping,$16.15,Sarah,No,Target
+1/1/2023 12:00:00,Fun,$210.00,Roland,Yes,Lucky Strike
+1/1/2023 12:00:00,Food,$25.00,Roland,Yes,College Pizza
+1/1/2023 12:00:00,Food,$40.00,Roland,Yes,7/11
+1/1/2023 12:00:00,Groceries,$58.91,Sarah,Yes,Everyplate
+1/1/2023 12:00:00,Food,$30.00,Roland,Yes,College Pizza
+1/1/2023 12:00:00,Miscellaneous,$12.99,Sarah,No,Canva Membership
+1/1/2023 12:00:00,Miscellaneous,$2.00,Sarah,No,TpT
+1/1/2023 12:00:00,Food,$6.15,Sarah,No,Unsure
+1/1/2023 12:00:00,Shopping,$62.55,Sarah,Yes,Blowup Bed
+1/1/2023 12:00:00,Shopping,$10.61,Sarah,No,Face masks
+1/1/2023 12:00:00,Shopping,$37.43,Sarah,No,Coloring books & markers
+1/1/2023 12:00:00,Miscellaneous,$2.13,Sarah,No,Google storage
+1/1/2023 12:00:00,Miscellaneous,$7.48,Sarah,No,Apple
+1/1/2023 12:00:00,Food,$5.34,Sarah,Yes,7/11
+1/1/2023 12:00:00,Miscellaneous,$0.99,Sarah,No,Apple
+1/1/2023 12:00:00,Cat,$29.77,Sarah,Yes,Cat cone
+1/1/2023 12:00:00,Miscellaneous,$9.99,Sarah,No,Spotify
+1/1/2023 12:00:00,Cat,$90.00,Sarah,Yes,Vet visit
+1/1/2023 12:00:00,Food,$26.00,Roland,Yes,Stewarts
+1/1/2023 12:00:00,Groceries,$58.91,Sarah,Yes,Everyplate
+1/1/2023 12:00:00,Miscellaneous,$9.99,Sarah,No,Kindle Unlimited
+1/1/2023 12:00:00,Bills,$154.00,Roland,Yes,Liberty Mutual - Insurance
+1/1/2023 12:00:00,Cat,$133.20,Sarah,Yes,Rover
+1/1/2023 12:00:00,Miscellaneous,$3.25,Sarah,No,TpT
+1/1/2023 12:00:00,Miscellaneous,$5.00,Sarah,No,TpT
+1/1/2023 12:00:00,Miscellaneous,$79.00,Sarah,No,Telehealth Visit
+1/1/2023 12:00:00,Miscellaneous,$1.00,Sarah,No,Poplight
+1/1/2023 12:00:00,Shopping,$12.84,Sarah,No,Michaels
+1/1/2023 12:00:00,Food,$18.21,Sarah,Yes,7/11
+1/1/2023 12:00:00,Shopping,$46.23,Sarah,Yes,Target
+1/1/2023 12:00:00,Groceries,$10.06,Sarah,Yes,Target
+1/1/2023 12:00:00,Groceries,$103.09,Sarah,Yes,Target
+1/1/2023 12:00:00,Miscellaneous,$27.23,Sarah,No,Vibrator
+1/1/2023 12:00:00,Transportation,$34.66,Sarah,No,Gas
+1/1/2023 12:00:00,Shopping,$89.99,Sarah,No,Indian outfit
+1/1/2023 12:00:00,Shopping,$12.40,Sarah,Yes,Window clings
+1/1/2023 12:00:00,Shopping,$18.00,Sarah,No,Lanyard & pop-its
+1/1/2023 12:00:00,Shopping,$10.38,Sarah,No,Target
+1/1/2023 12:00:00,Groceries,$37.74,Sarah,Yes,Target
+1/1/2023 12:00:00,Food,$24.98,Sarah,Yes,Chipotle
+1/1/2023 12:00:00,Transportation,$31.80,Sarah,No,Gas
+1/1/2023 12:00:00,Fun,$19.12,Sarah,No,Lucky Strike
+1/1/2023 12:00:00,Shopping,$68.47,Roland,Yes,Drill - January
+2/2/2023 12:00:00,Transportation,$60.00,Sarah,No,EZ Pass
+2/2/2023 12:00:00,Food,$29.21,Sarah,Yes,Blaze
+2/2/2023 12:00:00,Cat,$94.00,Sarah,Yes,Vet
+2/2/2023 12:00:00,Food,$31.00,Roland,Yes,Chipotle
+2/2/2023 12:00:00,Food,$39.00,Roland,Yes,Doordash
+2/2/2023 12:00:00,Bills,$30.00,Roland,Yes,Internet
+2/2/2023 12:00:00,Food,$35.00,Roland,Yes,Doordash
+2/2/2023 12:00:00,Groceries,$22.52,Roland,Yes,Target
+2/2/2023 12:00:00,Food,$20.00,Roland,Yes,College Pizza
+2/2/2023 12:00:00,Food,$13.58,Roland,Yes,7/11
+2/2/2023 12:00:00,Food,$11.39,Roland,Yes,Road trip snacks
+2/2/2023 12:00:00,Groceries,$40.00,Roland,Yes,Hannaford in Lake Placid
+2/2/2023 12:00:00,Miscellaneous,$11.00,Roland,Yes,Critters Ornament
+2/2/2023 12:00:00,Groceries,$151.69,Sarah,Yes,Target
+2/2/2023 12:00:00,Fun,$600.00,Roland,Yes,Hotel for Anurag's Wedding
+2/2/2023 12:00:00,Groceries,$40.51,Roland,Yes,Groceries from Star for Board Night
+2/2/2023 12:00:00,Groceries,$41.33,Sarah,No,Valentine's
+2/2/2023 12:00:00,Food,$10.69,Sarah,Yes,College Pizza
+2/2/2023 12:00:00,Food,$35.52,Sarah,Yes,Blaze
+2/2/2023 12:00:00,Shopping,$13.33,Sarah,Yes,Olympics
+2/2/2023 12:00:00,Cat,$40.00,Roland,Yes,Litter box
+2/2/2023 12:00:00,Food,$8.53,Sarah,No,Starbucks
+2/2/2023 12:00:00,Miscellaneous,$24.21,Sarah,Yes,LP
+2/2/2023 12:00:00,Shopping,$48.67,Sarah,No,Wedding outfit
+2/2/2023 12:00:00,Groceries,$58.91,Sarah,Yes,EveryPlate
+2/2/2023 12:00:00,Bills,$450.00,Sarah,Yes,Payment for M&D
+2/2/2023 12:00:00,Shopping,$45.99,Sarah,No,Old Navy Jeans
+2/2/2023 12:00:00,Shopping,$5.19,Sarah,No,Target
+2/2/2023 12:00:00,Groceries,$58.91,Sarah,Yes,EveryPlate
+2/2/2023 12:00:00,Miscellaneous,$12.99,Sarah,No,Canva
+2/2/2023 12:00:00,Miscellaneous,$2.13,Sarah,No,Google storage
+2/2/2023 12:00:00,Transportation,$30.34,Sarah,Yes,Gas (driving home)
+2/2/2023 12:00:00,Cat,$31.86,Roland,Yes,Automatic Feeder
+2/2/2023 12:00:00,Food,$10.91,Sarah,No,Starbucks
+2/2/2023 12:00:00,Shopping,$103.98,Sarah,Yes,LP sweatshirts
+2/2/2023 12:00:00,Food,$13.07,Sarah,Yes,Starbucks
+2/2/2023 12:00:00,Shopping,$33.30,Sarah,No,Stanley cup
+2/2/2023 12:00:00,Miscellaneous,$0.99,Sarah,No,Apple
+2/2/2023 12:00:00,Miscellaneous,$66.37,Sarah,No,LP balancing
+2/2/2023 12:00:00,Fun,$100.00,Roland,Yes,Ryan and Adriana Wedding Present
+2/2/2023 12:00:00,Food,$58.91,Sarah,Yes,EveryPlate
+2/2/2023 12:00:00,Transportation,$33.90,Sarah,No,Gas
+2/2/2023 12:00:00,Bills,$154.69,Roland,Yes,Liberty Mutual Insurance - Feb
+2/2/2023 12:00:00,Bills,$25.00,Sarah,No,Parking spot increase
+2/2/2023 12:00:00,Miscellaneous,$9.99,Sarah,No,Spotify
+2/2/2023 12:00:00,Miscellaneous,$9.99,Sarah,No,Kindle Unlimited
+2/2/2023 12:00:00,Transportation,$28.00,Roland,Yes,Gas
+2/2/2023 12:00:00,Food,$21.00,Roland,Yes,Auntie Annes
+2/2/2023 12:00:00,Groceries,$278.26,Sarah,Yes,Target credit card
+2/2/2023 12:00:00,Shopping,$40.51,Roland,Yes,Star Market
+3/3/2023 12:00:00,Food,$26.80,Sarah,Yes,Chipotle
+3/3/2023 12:00:00,Food,$58.91,Sarah,Yes,Everyplate
+3/3/2023 12:00:00,Miscellaneous,$450.00,Sarah,Yes,M&D Olsen Monthly Payments
+3/3/2023 12:00:00,Bills,$30.00,Roland,Yes,Internet
+3/3/2023 12:00:00,Food,$32.54,Roland,Yes,Pavement again
+3/3/2023 12:00:00,Miscellaneous,$50.00,Roland,Yes,Laundry
+3/3/2023 12:00:00,Miscellaneous,$14.00,Sarah,No,TpT
+3/3/2023 12:00:00,Food,$58.91,Sarah,Yes,Everyplate
+3/3/2023 12:00:00,Food,$30.28,Roland,Yes,Blaze
+3/3/2023 12:00:00,Transportation,$30.55,Sarah,Yes,Gas
+3/3/2023 12:00:00,Food,$12.00,Roland,Yes,Time Out Dessert
+3/3/2023 12:00:00,Food,$19.00,Roland,No,Time Out Dinner
+3/3/2023 12:00:00,Food,$47.63,Roland,Yes,Doordash
+3/3/2023 12:00:00,Groceries,$42.10,Sarah,Yes,Target
+3/3/2023 12:00:00,Groceries,$12.09,Roland,Yes,Target
+3/3/2023 12:00:00,Food,$30.01,Roland,Yes,Chipotle
+3/3/2023 12:00:00,Groceries,$292.19,Sarah,Yes,Target Credit Card
+3/3/2023 12:00:00,Food,$29.00,Roland,Yes,Doordash
+3/3/2023 12:00:00,Food,$58.91,Sarah,Yes,Everyplate
+3/3/2023 12:00:00,Food,$47.09,Roland,Yes,Thortons
+3/3/2023 12:00:00,Food,$10.72,Roland,Yes,7-11
+3/3/2023 12:00:00,Food,$23.11,Roland,Yes,Blaze
+3/3/2023 12:00:00,Shopping,$33.75,Sarah,Yes,Jessie's Bday Gift
+3/3/2023 12:00:00,Fun,$76.00,Sarah,Yes,Red Sox 5/4 Tickets
+3/3/2023 12:00:00,Transportation,$34.03,Roland,Yes,Gas
+3/3/2023 12:00:00,Food,$49.93,Sarah,Yes,Everyplate
+3/3/2023 12:00:00,Groceries,$11.08,Sarah,Yes,7/11
+3/3/2023 12:00:00,Bills,$154.69,Roland,Yes,Car Insurance
+3/3/2023 12:00:00,Food,$41.62,Sarah,Yes,SQ?
+3/3/2023 12:00:00,Groceries,$91.94,Sarah,Yes,Target
+3/3/2023 12:00:00,Transportation,$12.16,Sarah,Yes,Dunkin
+3/3/2023 12:00:00,Groceries,$70.06,Sarah,Yes,Target
+3/3/2023 12:00:00,Shopping,$73.71,Sarah,Yes,Target
+3/3/2023 12:00:00,Food,$23.17,Sarah,Yes,Chipotle
+3/3/2023 12:00:00,Cat,$59.55,Sarah,Yes,Chewy
+4/4/2023 12:00:00,Food,$20.82,Sarah,Yes,Food
+4/4/2023 12:00:00,Bills,$30.00,Roland,Yes,Internet
+4/4/2023 12:00:00,Food,$23.17,Sarah,Yes,Chipotle
+4/4/2023 12:00:00,Food,$4.00,Roland,Yes,Ice Cream from Stewarts
+4/4/2023 12:00:00,Groceries,$56.10,Sarah,Yes,Target
+4/4/2023 12:00:00,Food,$16.00,Roland,Yes,7-11
+4/4/2023 12:00:00,Cat,$94.00,Sarah,Yes,Telehealth Vet Visit
+4/4/2023 12:00:00,Food,$15.58,Sarah,Yes,Dunkin'
+4/4/2023 12:00:00,Food,$22.20,Roland,Yes,Chipotle
+4/4/2023 12:00:00,Food,$19.45,Roland,Yes,Wendys
+4/4/2023 12:00:00,Food,$16.64,Roland,Yes,Dunkin
+4/4/2023 12:00:00,Transportation,$7.50,Sarah,Yes,Portsmouth Parking
+4/4/2023 12:00:00,Shopping,$12.97,Sarah,Yes,Game store Portsmouth
+4/4/2023 12:00:00,Food,$47.67,Sarah,Yes,Friendly Toast Portsmouth
+4/4/2023 12:00:00,Transportation,$9.00,Roland,Yes,T ticket
+4/4/2023 12:00:00,Food,$50.00,Roland,Yes,Boston Burger Company
+4/4/2023 12:00:00,Food,$29.21,Roland,Yes,Chipotle
+4/4/2023 12:00:00,Fun,$173.33,Sarah,Yes,Red Sox Tickets 5/13
+4/4/2023 12:00:00,Bills,$450.00,Sarah,Yes,M&D Monthly Payment
+4/4/2023 12:00:00,Food,$23.11,Roland,Yes,Blaze
+4/4/2023 12:00:00,Food,$11.84,Roland,Yes,Dunkin
+4/4/2023 12:00:00,Food,$20.08,Sarah,Yes,Starbucks
+4/4/2023 12:00:00,Fun,$30.00,Roland,Yes,Mom Rao Birthday Gift
+4/4/2023 12:00:00,Transportation,$28.74,Sarah,Yes,Gas from Easter trip
+4/4/2023 12:00:00,Shopping,$45.00,Roland,Yes,Macro Polo Portsmouth
+4/4/2023 12:00:00,Shopping,$29.98,Roland,Yes,Kitchen Stuff
+4/4/2023 12:00:00,Food,$174.48,Roland,Yes,Toscana's Chophouse Portsmouth
+4/4/2023 12:00:00,Miscellaneous,$62.00,Roland,Yes,Motor Vehicle Excise Tax
+4/4/2023 12:00:00,Food,$27.70,Roland,Yes,College Pizza
+4/4/2023 12:00:00,Transportation,$27.69,Roland,Yes,Gas
+4/4/2023 12:00:00,Bills,$255.72,Sarah,Yes,Target Credit Card
+4/4/2023 12:00:00,Food,$49.93,Sarah,Yes,Everyplate
+4/4/2023 12:00:00,Food,$59.91,Sarah,Yes,Everyplate
+4/4/2023 12:00:00,Bills,$154.69,Roland,Yes,Car Insurance
+4/4/2023 12:00:00,Transportation,$34.17,Roland,Yes,Gas
+3/3/2023 12:00:00,Bills,$100.90,Sarah,Yes,Eversource - March
+4/4/2023 12:00:00,Transportation,$30.24,Roland,Yes,Gas
+4/4/2023 12:00:00,Bills,$54.58,Sarah,Yes,Eversource - April
+4/4/2023 12:00:00,Cat,$26.51,Roland,Yes,Cat Clicker
+4/4/2023 12:00:00,Cat,$20.00,Roland,Yes,Cat Stuff on Amazon
+5/5/2023 12:00:00,Groceries,$55.84,Roland,Yes,Star Market
+5/5/2023 12:00:00,Bills,$30.00,Roland,Yes,Internet
+5/5/2023 12:00:00,Food,$31.62,Roland,Yes,Chipotle
+5/5/2023 12:00:00,Food,$26.54,Roland,Yes,Pavement
+5/5/2023 12:00:00,Groceries,$340.00,Roland,Yes,Target (Vacuum)
+5/5/2023 12:00:00,Food,$35.31,Roland,Yes,Sufra
+5/5/2023 12:00:00,Food,$34.83,Roland,Yes,Chipotle
+5/5/2023 12:00:00,Food,$14.72,Roland,Yes,7-11
+5/5/2023 12:00:00,Food,$10.00,Roland,Yes,7-11
+5/5/2023 12:00:00,Food,$27.00,Roland,Yes,Ice Cream
+5/5/2023 12:00:00,Miscellaneous,$11.00,Roland,Yes,Square?
+5/5/2023 12:00:00,Food,$17.00,Roland,Yes,7-11
+5/5/2023 12:00:00,Food,$51.16,Roland,Yes,Doordash
+5/5/2023 12:00:00,Miscellaneous,$17.08,Roland,Yes,Square?
+5/5/2023 12:00:00,Food,$22.99,Roland,Yes,Fomu Ice Cream
+5/5/2023 12:00:00,Food,$26.54,Roland,Yes,Pavement
+5/5/2023 12:00:00,Food,$29.95,Roland,Yes,Chipotle
+5/5/2023 12:00:00,Food,$14.00,Roland,Yes,Square?
+5/5/2023 12:00:00,Groceries,$26.29,Roland,Yes,Target
+5/5/2023 12:00:00,Food,$30.00,Roland,Yes,Logan Snacks
+5/5/2023 12:00:00,Shopping,$40.00,Roland,Yes,Walmart - HH
+5/5/2023 12:00:00,Food,$64.19,Roland,Yes,Sea Salts
+5/5/2023 12:00:00,Food,$16.65,Roland,Yes,Snacks on the way back from HH
+5/5/2023 12:00:00,Food,$51.06,Roland,Yes,Chipotle
+5/5/2023 12:00:00,Cat,$30.00,Roland,Yes,Cat Stuff on Amazon
+5/5/2023 12:00:00,Food,$26.00,Roland,Yes,Uber Eats
+5/5/2023 12:00:00,Bills,$154.69,Roland,Yes,Liberty Mutual
+5/5/2023 12:00:00,Shopping,$30.00,Roland,Yes,Cat Stuff again
+5/5/2023 12:00:00,Food,$7.73,Roland,Yes,7-11
+5/5/2023 12:00:00,Transportation,$31.25,Roland,Yes,Uber to Airport
+5/5/2023 12:00:00,Transportation,$38.45,Roland,Yes,Uber back home
+5/5/2023 12:00:00,Bills,$450.00,Sarah,Yes,M&D Monthly Payment
+5/5/2023 12:00:00,Groceries,$49.93,Sarah,Yes,Everyplate
+5/5/2023 12:00:00,Cat,$21.06,Sarah,Yes,Rover for HH
+5/5/2023 12:00:00,Food,$49.93,Sarah,Yes,Everyplate
+5/5/2023 12:00:00,Groceries,$49.93,Sarah,Yes,Everyplate
+5/5/2023 12:00:00,Food,$8.53,Sarah,Yes,7/11
+5/5/2023 12:00:00,Groceries,$49.93,Sarah,Yes,Everyplate
+5/5/2023 12:00:00,Groceries,$49.93,Sarah,Yes,Everyplate
+5/5/2023 12:00:00,Food,$20.27,Sarah,Yes,Breakfast in Portsmouth
+5/5/2023 12:00:00,Cat,$16.98,Sarah,Yes,Cat stuff
+5/5/2023 12:00:00,Groceries,$17.72,Sarah,Yes,7/11
+5/5/2023 12:00:00,Groceries,$53.64,Sarah,Yes,Target
+5/5/2023 12:00:00,Cat,$110.00,Sarah,Yes,Cat DNA test
+5/5/2023 12:00:00,Food,$20.21,Sarah,Yes,Dunkin
+5/5/2023 12:00:00,Groceries,$70.12,Sarah,Yes,Target trip
+5/5/2023 12:00:00,Food,$18.68,Sarah,Yes,College Pizza
+5/5/2023 12:00:00,Groceries,$227.00,Sarah,Yes,Target trips throughout the month of May
+6/1/2023 12:00:00,Groceries,$67.40,Sarah,Yes,Target
+6/1/2023 12:00:00,Food,$19.58,Sarah,Yes,Pavement
+6/1/2023 12:00:00,Food,$27.00,Sarah,Yes,Pavement
+6/1/2023 12:00:00,Food,$16.59,Sarah,Yes,Starbucks
+6/1/2023 12:00:00,Bills,$600.00,Sarah,Yes,June M&D Payment
+6/1/2023 12:00:00,Groceries,$49.93,Sarah,Yes,Everyplate
+6/1/2023 12:00:00,Groceries,$284.00,Sarah,Yes,Target
+6/1/2023 12:00:00,Groceries,$49.93,Sarah,Yes,Everyplate
+6/1/2023 12:00:00,Food,$19.10,Sarah,Yes,Starbucks
+6/1/2023 12:00:00,Groceries,$136.00,Sarah,Yes,Target
+6/1/2023 12:00:00,Groceries,$49.93,Sarah,Yes,Everyplate
+6/1/2023 12:00:00,Groceries,$9.98,Sarah,Yes,Everyplate
+7/1/2023 12:00:00,Bills,$600.00,Sarah,Yes,July M&D Payment (last one!)
+7/1/2023 12:00:00,Cat,$25.00,Sarah,Yes,Cat cost for apartment
+7/1/2023 12:00:00,Food,$13.67,Sarah,Yes,Dunkin'
+7/1/2023 12:00:00,Groceries,$232.00,Sarah,Yes,Target
+7/1/2023 12:00:00,Food,$49.93,Sarah,Yes,Everyplate
+7/1/2023 12:00:00,Transportation,$36.10,Sarah,Yes,Gas going home
+7/1/2023 12:00:00,Fun,$70.00,Sarah,Yes,Improv tickets cousins weekend
+7/1/2023 12:00:00,Transportation,$20.52,Sarah,Yes,Uber after improv
+7/1/2023 12:00:00,Food,$28.00,Sarah,Yes,Pavement race day
+7/1/2023 12:00:00,Groceries,$49.93,Sarah,Yes,Everyplate
+7/1/2023 12:00:00,Fun,$9.99,Sarah,Yes,F1 TV
+7/1/2023 12:00:00,Groceries,$42.00,Sarah,Yes,Target leftovers
+6/1/2023 12:00:00,Food,$14.12,Sarah,Yes,7/11
+6/1/2023 12:00:00,Food,$14.18,Sarah,Yes,Caffe Nero
+6/1/2023 12:00:00,Food,$24.40,Sarah,Yes,Pavement
+6/1/2023 12:00:00,Fun,$94.00,Sarah,Yes,Red Sox tickets
+6/1/2023 12:00:00,Cat,$15.54,Sarah,Yes,Rover for Saratoga trip
+6/1/2023 12:00:00,Food,$49.93,Sarah,Yes,Everyplate
+6/1/2023 12:00:00,Bills,$139.00,Sarah,Yes,Renter's Insurance
+6/1/2023 12:00:00,Fun,$36.00,Sarah,Yes,Puttshack
+6/1/2023 12:00:00,Transportation,$47.25,Sarah,Yes,Gas to home
+6/1/2023 12:00:00,Food,$26.80,Roland,Yes,Chipotle
+6/1/2023 12:00:00,Fun,$26.00,Roland,Yes,AMC - Guardians of the Galaxy
+6/1/2023 12:00:00,Food,$30.00,Roland,Yes,AMC - Snacks
+6/1/2023 12:00:00,Transportation,$9.00,Roland,Yes,T tickets
+6/1/2023 12:00:00,Groceries,$17.40,Roland,Yes,Star Market
+6/1/2023 12:00:00,Bills,$30.00,Roland,Yes,Internet
+6/1/2023 12:00:00,Food,$30.00,Roland,Yes,Chipotle
+6/1/2023 12:00:00,Fun,$16.57,Roland,Yes,Netflix
+6/1/2023 12:00:00,Food,$37.00,Roland,Yes,Blaze Pizza
+6/1/2023 12:00:00,Food,$10.29,Roland,Yes,7-11
+6/1/2023 12:00:00,Food,$28.00,Roland,Yes,Chipotle
+6/1/2023 12:00:00,Food,$10.73,Roland,Yes,7-11
+6/1/2023 12:00:00,Food,$88.00,Roland,Yes,Sweet Cheeks
+6/1/2023 12:00:00,Food,$40.00,Roland,Yes,Panera Doordash
+6/1/2023 12:00:00,Food,$40.00,Roland,Yes,Subway
+6/1/2023 12:00:00,Food,$19.00,Roland,Yes,7-11
+6/1/2023 12:00:00,Food,$9.00,Roland,Yes,7-11
+6/1/2023 12:00:00,Food,$23.68,Roland,Yes,Uber Eats
+6/1/2023 12:00:00,Food,$20.44,Roland,Yes,Chipotle
+6/1/2023 12:00:00,Groceries,$40.57,Roland,Yes,Target
+6/1/2023 12:00:00,Food,$22.00,Roland,Yes,Chipotle
+7/1/2023 12:00:00,Food,$41.00,Roland,Yes,Gas
+7/1/2023 12:00:00,Fun,$33.40,Roland,Yes,AMC - Elemental
+7/1/2023 12:00:00,Bills,$30.00,Roland,Yes,Internet
+7/1/2023 12:00:00,Bills,$16.60,Roland,Yes,Netflix
+7/1/2023 12:00:00,Food,$17.50,Roland,Yes,Dunkin
+7/1/2023 12:00:00,Food,$20.00,Roland,Yes,Stuff for picnic in Syracuse
+7/1/2023 12:00:00,Food,$32.30,Roland,Yes,Subway
+7/1/2023 12:00:00,Food,$20.00,Roland,Yes,Dunkin
+7/1/2023 12:00:00,Transportation,$9.00,Roland,Yes,T ticket
+7/1/2023 12:00:00,Food,$80.00,Roland,Yes,Uber Eats
+7/1/2023 12:00:00,Food,$40.00,Roland,Yes,Chipotle
+7/1/2023 12:00:00,Fun,"$2,263.00",Roland,Yes,Cruise
+8/1/2023 12:00:00,Food,$33.01,Roland,Yes,Chipotle
+8/1/2023 12:00:00,Food,$55.15,Roland,Yes,Uber Eats
+8/1/2023 12:00:00,Food,$36.13,Roland,Yes,Uber Eats
+8/1/2023 12:00:00,Fun,$94.00,Sarah,Yes,Red Sox
+8/1/2023 12:00:00,Cat,$15.54,Sarah,Yes,Rover
+8/1/2023 12:00:00,Food,$19.26,Roland,Yes,Gelato
+8/1/2023 12:00:00,Groceries,$49.93,Sarah,Yes,Everyplate
+8/1/2023 12:00:00,Food,$8.51,Roland,Yes,Pizza
+8/1/2023 12:00:00,Bills,$139.00,Sarah,Yes,Renter's Insurance
+8/1/2023 12:00:00,Food,$44.06,Sarah,Yes,Uber Eats
+8/1/2023 12:00:00,Transportation,$10.54,Roland,Yes,Gas in Vermont
+8/1/2023 12:00:00,Fun,$36.00,Sarah,Yes,Puttshack
+8/1/2023 12:00:00,Food,$30.91,Sarah,Yes,Uber Eats
+8/1/2023 12:00:00,Transportation,$47.25,Sarah,Yes,Gas
+8/1/2023 12:00:00,Food,$50.00,Roland,Yes,Boston Burger Company
+8/1/2023 12:00:00,Food,$41.28,Roland,Yes,Uber Eats
+8/1/2023 12:00:00,Miscellaneous,$100.00,Sarah,Yes,Laura & Anurag Wedding Gift
+8/1/2023 12:00:00,Bills,$10.00,Roland,Yes,Laundry
+8/1/2023 12:00:00,Food,$48.95,Sarah,Yes,Uber Eats
+8/1/2023 12:00:00,Fun,$122.00,Roland,Yes,Red Sox Tickets
+8/1/2023 12:00:00,Food,$52.42,Sarah,Yes,Uber Eats
+8/1/2023 12:00:00,Food,$49.93,Sarah,Yes,Everyplate
+8/1/2023 12:00:00,Food,$16.24,Roland,Yes,7-11
+8/1/2023 12:00:00,Food,$48.51,Roland,Yes,Uber Eats
+8/1/2023 12:00:00,Food,$44.52,Sarah,Yes,Uber Eats
+8/1/2023 12:00:00,Food,$15.71,Roland,Yes,7-11
+8/1/2023 12:00:00,Food,$26.93,Roland,Yes,Popeyes Louisiana Kitchen
+8/1/2023 12:00:00,Bills,$9.99,Sarah,Yes,F1TV
+8/1/2023 12:00:00,Transportation,$36.81,Roland,Yes,Gas
+8/1/2023 12:00:00,Food,$37.13,Roland,Yes,Chipotle
+8/1/2023 12:00:00,Bills,$16.57,Roland,Yes,Netflix
+8/1/2023 12:00:00,Bills,$30.00,Roland,Yes,Internet
+8/1/2023 12:00:00,Bills,$50.00,Roland,Yes,Laundry
+8/1/2023 12:00:00,Food,$32.42,Roland,Yes,Chipotle
+8/1/2023 12:00:00,Food,$42.00,Sarah,Yes,Chipotle
+8/1/2023 12:00:00,Food,$31.80,Roland,Yes,Uber Eats
+8/1/2023 12:00:00,Transportation,$36.80,Sarah,Yes,Gas
+8/1/2023 12:00:00,Transportation,$20.99,Roland,Yes,Uber
+8/1/2023 12:00:00,Bills,$193.25,Roland,Yes,Liberty Mutual
+8/1/2023 12:00:00,Groceries,$193.00,Sarah,Yes,Target
+9/1/2023 12:00:00,Food,$13.60,Roland,Yes,7-11
+9/1/2023 12:00:00,Uber Eats,$30.30,Roland,Yes,Uber Eats
+9/1/2023 12:00:00,Food,$12.77,Roland,Yes,7-11
+9/1/2023 12:00:00,Fun,$41.20,Roland,Yes,Red Sox Food
+9/1/2023 12:00:00,Groceries,$327.00,Sarah,Yes,Target for the month
+9/1/2023 12:00:00,Uber Eats,$40.08,Roland,Yes,Uber Eats
+9/1/2023 12:00:00,Food,$22.00,Roland,Yes,College Pizza
+9/1/2023 12:00:00,Food,$41.78,Roland,Yes,Chipotle
+9/1/2023 12:00:00,Transportation,$30.00,Roland,Yes,T Tickets
+9/1/2023 12:00:00,Food,$8.00,Roland,Yes,Boston Chipyard (Cookies)
+9/1/2023 12:00:00,Food,$30.13,Roland,Yes,AMC Food
+9/1/2023 12:00:00,Food,$56.81,Roland,Yes,Star Market
+9/1/2023 12:00:00,Food,$26.27,Roland,Yes,7-11
+9/1/2023 12:00:00,Food,$36.27,Roland,Yes,Chipotle
+9/1/2023 12:00:00,Food,$26.00,Sarah,Yes,Starbucks in Salem
+9/1/2023 12:00:00,Food,$14.00,Roland,Yes,Dunkin
+9/1/2023 12:00:00,Food,$9.42,Roland,Yes,Cafe Nero
+9/1/2023 12:00:00,Transportation,$37.45,Sarah,Yes,Gas
+9/1/2023 12:00:00,Fun,$12.00,Sarah,Yes,Museum of Science Tix
+9/1/2023 12:00:00,Uber Eats,$51.28,Roland,Yes,Uber Eats
+9/1/2023 12:00:00,Bills,$16.57,Roland,Yes,Netflix
+9/1/2023 12:00:00,Food,$44.35,Roland,Yes,Subway
+9/1/2023 12:00:00,Uber Eats,$49.31,Roland,Yes,Uber Eats
+9/1/2023 12:00:00,Groceries,$49.93,Sarah,Yes,Everyplate
+9/1/2023 12:00:00,Bills,$30.00,Roland,Yes,Internet
+9/1/2023 12:00:00,Groceries,$36.97,Sarah,Yes,Star Market
+9/1/2023 12:00:00,Fun,$27.20,Roland,Yes,Aquarium Tickets
+9/1/2023 12:00:00,Fun,$194.23,Roland,Yes,Hotel in Salem
+9/1/2023 12:00:00,Food,$17.00,Roland,Yes,College Pizza
+9/1/2023 12:00:00,Food,$22.65,Roland,Yes,Panera in SwampScott
+9/1/2023 12:00:00,Groceries,$49.93,Sarah,Yes,Everyplate
+9/1/2023 12:00:00,Food,$8.00,Roland,Yes,7-11
+9/1/2023 12:00:00,Fun,$42.77,Sarah,Yes,Dad's Bday Gift
+9/1/2023 12:00:00,Food,$36.00,Sarah,Yes,Chipotle
+9/1/2023 12:00:00,Bills,$193.25,Roland,Yes,Liberty Mutual Insurance
+9/1/2023 12:00:00,Fun,$46.50,Sarah,Yes,Red Sox Tix
+9/1/2023 12:00:00,Groceries,$20.17,Sarah,Yes,Star Market
+9/1/2023 12:00:00,Food,$11.33,Sarah,Yes,7/11
+9/1/2023 12:00:00,Food,$18.00,Sarah,Yes,Pavement
+9/2/2023 12:00:00,Transportation,$35.75,Sarah,Yes,Gas
+9/3/2023 12:00:00,Shopping,$28.40,Roland,Yes,Britta Filters
+9/4/2023 12:00:00,Fun,$9.99,Sarah,Yes,F1TV
+9/5/2023 12:00:00,Food,$11.08,Sarah,Yes,7/11
+9/6/2023 12:00:00,Fun,$35.00,Sarah,Yes,Movie Tix
+9/7/2023 12:00:00,Food,$32.00,Sarah,Yes,Pavement
+9/8/2023 12:00:00,Fun,$320.00,Sarah,Yes,Internet for Cruise
+10/28/2023 14:00:01,Groceries,$373.00,Sarah,Yes,Target for the month of October
+10/28/2023 14:01:10,Groceries,$49.93,Sarah,Yes,Everyplate
+10/28/2023 14:02:38,Uber Eats,$46.58,Sarah,Yes,Uber Eats
+10/28/2023 14:03:11,Cat,$15.54,Sarah,Yes,Rover for Poconos
+10/28/2023 14:03:44,Transportation,$33.06,Sarah,Yes,Gas
+10/28/2023 14:03:57,Groceries,$49.93,Sarah,Yes,EveryPlate
+10/28/2023 14:04:50,Uber Eats,$40.27,Sarah,Yes,Uber Eats
+10/28/2023 14:05:03,Groceries,$49.93,Sarah,Yes,EveryPlate
+10/28/2023 14:06:25,Cat,$25.91,Sarah,Yes,Cat Scratcher
+10/28/2023 14:07:01,Fun,$21.25,Sarah,Yes,Wally's secret Santa
+10/28/2023 14:07:22,Bills,$9.99,Sarah,Yes,F1TV
+10/28/2023 14:08:57,Food,$50.00,Roland,Yes,Callie's Candy Kitchen
+10/28/2023 14:09:23,Transportation,$20.00,Sarah,Yes,Train to Patriots game
+10/28/2023 14:09:36,Transportation,$38.35,Sarah,Yes,Gas
+10/28/2023 14:10:11,Fun,$37.45,Sarah,Yes,Tix for Patriots
+10/28/2023 14:10:44,Fun,$38.00,Sarah,Yes,Improv Asylum
+10/28/2023 14:11:07,Groceries,$14.09,Sarah,Yes,7/11
+11/11/2023 12:00:00,Food,$32.96,Roland,Yes,Chipotle
+11/11/2023 12:00:00,Food,$18.68,Roland,Yes,College Pizza
+11/11/2023 12:00:00,Bills,$30.00,Roland,Yes,Internet
+11/11/2023 12:00:00,Food,$23.08,Roland,Yes,7-11
+11/11/2023 12:00:00,Food,$36.92,Roland,Yes,Chipotle
+11/11/2023 12:00:00,Food,$30.00,Roland,Yes,Chipotle
+11/11/2023 12:00:00,Food,$11.54,Roland,Yes,7-11
+11/11/2023 12:00:00,Uber Eats,$65.76,Roland,Yes,Uber Eats
+11/11/2023 12:00:00,Uber Eats,$33.58,Roland,Yes,Uber Eats
+11/11/2023 12:00:00,Uber Eats,$47.94,Roland,Yes,Uber Eats
+11/11/2023 12:00:00,Food,$18.68,Roland,Yes,College Pizza
+11/11/2023 12:00:00,Food,$11.00,Roland,Yes,7-11
+11/11/2023 12:00:00,Uber Eats,$48.94,Roland,Yes,Uber Eats
+11/11/2023 12:00:00,Transportation,$43.00,Roland,Yes,Gas
+11/11/2023 12:00:00,Transportation,$35.00,Roland,Yes,Gas
+11/11/2023 12:00:00,Food,$13.00,Roland,Yes,7-11
+11/11/2023 12:00:00,Uber Eats,$38.72,Roland,Yes,Uber Eats
+11/11/2023 12:00:00,Bills,$193.25,Roland,Yes,Car Insurance
+11/11/2023 12:00:00,Groceries,$49.93,Sarah,Yes,Everyplate
+11/11/2023 12:00:00,Cat,$21.09,Sarah,Yes,Rover
+11/11/2023 12:00:00,Uber Eats,$27.18,Sarah,Yes,
+11/11/2023 12:00:00,Cat,$12.04,Sarah,Yes,Bruno Xmas
+11/11/2023 12:00:00,Groceries,$49.93,Sarah,Yes,Everyplate
+11/11/2023 12:00:00,Groceries,$49.93,Sarah,Yes,Everyplate
+11/11/2023 12:00:00,Fun,$9.99,Sarah,Yes,F1TV
+11/11/2023 12:00:00,Groceries,$415.00,Sarah,Yes,Target for the month
+11/11/2023 12:00:00,Shopping,$10.63,Sarah,Yes,Wally Xmas
+11/11/2023 12:00:00,Fun,$134.95,Sarah,Yes,Straight No Chaser Tix
+11/11/2023 12:00:00,Food,$41.52,Roland,Yes,Chipotle
+12/12/2023 12:00:00,Food,$104.45,Sarah,Yes,Dinner in Salem
+12/12/2023 12:00:00,Fun,$22.00,Roland,Yes,Hampton Inn Deposit
+12/12/2023 12:00:00,Food,$22.00,Roland,Yes,Red Line Cafe
+12/12/2023 12:00:00,Food,$16.72,Roland,Yes,CVS snacks
+12/12/2023 12:00:00,Food,$28.00,Roland,Yes,7-11
+12/12/2023 12:00:00,Bills,$30.00,Roland,Yes,Internet
+12/12/2023 12:00:00,Fun,$33.00,Sarah,Yes,Movies in TX
+12/12/2023 12:00:00,Food,$12.00,Roland,Yes,7-11
+12/12/2023 12:00:00,Fun,$188.48,Sarah,Yes,Drink package for cruise
+12/12/2023 12:00:00,Uber Eats,$51.91,Sarah,Yes,
+12/12/2023 12:00:00,Uber Eats,$28.44,Roland,Yes,Uber Eats
+12/12/2023 12:00:00,Transportation,$16.89,Sarah,Yes,Uber
+12/12/2023 12:00:00,Food,$10.00,Roland,Yes,7-11
+12/12/2023 12:00:00,Food,$18.11,Roland,Yes,7-11
+12/12/2023 12:00:00,Groceries,$49.93,Sarah,Yes,Everyplate
+12/12/2023 12:00:00,Food,$21.58,Roland,Yes,7-11
+12/12/2023 12:00:00,Food,$52.88,Roland,Yes,Pavement with Sarah's Parents
+12/12/2023 12:00:00,Food,$13.00,Roland,Yes,Snacks at Seaport and Quincy
+12/12/2023 12:00:00,Cat,$34.67,Sarah,Yes,Photo album
+12/12/2023 12:00:00,Food,$38.63,Roland,Yes,Chipotle
+12/12/2023 12:00:00,Uber Eats,$34.30,Roland,Yes,Uber Eats
+12/12/2023 12:00:00,Cat,$107.00,Sarah,Yes,Rover
+12/12/2023 12:00:00,Cat,$22.05,Sarah,Yes,Cat ornament
+12/12/2023 12:00:00,Fun,$245.98,Roland,Yes,Cruise Excursion
+12/12/2023 12:00:00,Food,$19.00,Roland,Yes,7-11
+12/12/2023 12:00:00,Bills,$193.25,Roland,Yes,Car Insurance
+12/12/2023 12:00:00,Groceries,49.93,Sarah,Yes,Everyplate
+12/12/2023 12:00:00,Uber Eats,41.14,Sarah,Yes,
+12/12/2023 12:00:00,Groceries,206,Sarah,Yes,Target throughout the month
+10/10/2023 12:00:00,Food,43.16,Roland,Yes,Panera
+10/10/2023 12:00:00,Uber Eats,43.77,Roland,Yes,Uber Eats
+10/10/2023 12:00:00,Bills,60,Roland,Yes,Peacock Yearly Membership
+10/10/2023 12:00:00,Fun,20,Roland,Yes,Improv Asylum
+10/10/2023 12:00:00,Food,35,Roland,Yes,Chipotle
+10/10/2023 12:00:00,Fun,604,Roland,Yes,Flights to Denver
+10/10/2023 12:00:00,Food,17,Roland,Yes,College Pizza
+10/10/2023 12:00:00,Food,18,Roland,Yes,Dunkin
+10/10/2023 12:00:00,Uber Eats,50,Roland,Yes,Uber Eats
+10/10/2023 12:00:00,Food,13,Roland,Yes,7-11
+10/10/2023 12:00:00,Transportation,27,Roland,Yes,Gas
+10/10/2023 12:00:00,Shopping,11,Roland,Yes,Pocono Farmstand
+10/10/2023 12:00:00,Transportation,10,Roland,Yes,Gas
+10/10/2023 12:00:00,Food,23.2,Roland,Yes,McDonalds
+10/10/2023 12:00:00,Food,34.14,Roland,Yes,Chipotle
+10/10/2023 12:00:00,Food,30,Roland,Yes,Uber Eats
+10/10/2023 12:00:00,Food,50.5,Roland,Yes,Boston Burger Company
+10/10/2023 12:00:00,Uber Eats,50.57,Roland,Yes,Uber Eats
+10/10/2023 12:00:00,Uber Eats,42.05,Roland,Yes,Uber Eats
+10/10/2023 12:00:00,Bills,30,Roland,Yes,Internet
+10/10/2023 12:00:00,Food,13.58,Roland,Yes,7-11
+10/10/2023 12:00:00,Food,30,Roland,Yes,Chipotle

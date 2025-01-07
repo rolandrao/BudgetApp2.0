@@ -1,0 +1,314 @@
+Timestamp,Category,Amount,Who paid?,Shared?,Notes
+9/4/2022 15:29:46,Groceries,$80.00,Sarah,Yes,Groceries
+9/4/2022 15:33:33,Shopping,$40.00,Sarah,No,Target Stuff
+9/4/2022 15:35:18,Bills,"$1,500.00",Roland,No,Rent
+9/4/2022 15:35:19,Bills,$750.00,Sarah,No,Rent
+9/4/2022 15:36:04,Fun,$48.00,Sarah,Yes,Red Sox
+9/4/2022 15:36:24,Bills,$105.00,Sarah,Yes,Towed :(
+9/4/2022 15:36:45,Food,$37.07,Sarah,Yes,Pavement
+9/4/2022 15:41:06,Fun,$25.00,Roland,Yes,Art Print at Copley Square
+9/4/2022 15:42:02,Food,$50.00,Roland,Yes,Boston Burger Company
+9/4/2022 15:43:07,Miscellaneous,$12.00,Roland,Yes,Uber to get towed car :(
+9/4/2022 17:50:16,Shopping,$12.72,Sarah,Yes,Shutterfly
+9/5/2022 16:54:36,Shopping,$30.00,Roland,Yes,Frames for picture wall
+9/8/2022 17:52:29,Transportation,$35.00,Sarah,Yes,Gas on the way home for the wedding!!
+9/11/2022 16:11:36,Groceries,$94.00,Roland,Yes,Weekly Target Trip
+9/11/2022 16:12:00,Shopping,$24.00,Roland,Yes,Brownie Pan and Colander
+9/11/2022 16:12:17,Food,$28.00,Roland,Yes,McDonalds on the way back from the wedding
+9/11/2022 16:12:31,Transportation,$42.00,Roland,Yes,Gas
+9/11/2022 20:55:55,Food,$30.00,Roland,Yes,Chipotle
+9/14/2022 16:49:55,Groceries,$12.00,Sarah,Yes,Misc Groceries
+9/17/2022 12:42:36,Shopping,$121.00,Roland,No,Pandora birthday gift
+9/17/2022 12:42:52,Food,$33.00,Sarah,No,Dinner with meghan
+9/17/2022 12:43:11,Food,$20.00,Roland,No,Dinner with myself
+9/17/2022 15:19:50,Groceries,$51.70,Sarah,Yes,Groceries
+9/17/2022 15:20:14,Shopping,$8.50,Sarah,Yes,Command hooks
+9/17/2022 15:20:59,Shopping,$4.00,Sarah,Yes,Oil dispenser
+9/17/2022 15:21:22,Shopping,$27.50,Sarah,No,Misc target stuff (socks etc)
+9/18/2022 17:28:31,Groceries,$5.09,Sarah,Yes,7/11
+9/18/2022 17:29:02,Miscellaneous,$3.50,Sarah,No,TpT
+9/18/2022 17:29:42,Food,$6.05,Sarah,Yes,Starbucks
+9/18/2022 17:30:08,Miscellaneous,$12.99,Sarah,No,Canva Membership
+9/18/2022 17:30:28,Transportation,$4.80,Sarah,No,T to see Meghan
+9/18/2022 17:31:29,Shopping,$42.10,Sarah,Yes,Various Bday Gifts
+9/18/2022 17:31:43,Shopping,$76.54,Sarah,Yes,Sam's Bday Gift
+9/18/2022 17:32:21,Food,$10.38,Sarah,Yes,Starbucks
+9/18/2022 17:33:49,Miscellaneous,$54.00,Sarah,Yes,Amazon Purchases (Covid test & picture frame)
+9/18/2022 17:34:10,Miscellaneous,$2.13,Sarah,No,Google Subscription
+9/18/2022 17:35:30,Food,$10.38,Sarah,Yes,Starbucks
+9/18/2022 17:36:01,Transportation,$19.71,Sarah,Yes,EZPass
+9/24/2022 13:54:53,Food,$66.00,Roland,Yes,Mumbai Spice
+9/24/2022 13:55:12,Food,$21.00,Roland,Yes,Sufra 
+9/24/2022 15:37:08,Groceries,$115.00,Roland,Yes,Groceries
+9/24/2022 15:37:18,Shopping,$5.00,Roland,Yes,Nail stuff
+9/25/2022 14:59:55,Miscellaneous,$4.00,Sarah,No,TpT
+9/25/2022 15:00:22,Transportation,$35.82,Sarah,Yes,Gas
+9/25/2022 15:00:43,Shopping,$31.91,Sarah,No,Sarah's shopping habits
+9/25/2022 15:01:02,Food,$6.47,Sarah,No,Starbucks
+9/25/2022 15:01:17,Miscellaneous,$4.99,Sarah,No,Spotify
+9/25/2022 15:01:36,Food,$10.91,Sarah,Yes,Starbucks
+9/25/2022 15:02:09,Miscellaneous,$80.00,Sarah,No,Notebooks for school
+9/25/2022 15:26:01,Shopping,$98.00,Sarah,No,Kindle
+10/1/2022 14:48:16,Groceries,$88.00,Sarah,Yes,Groceries
+10/1/2022 14:48:33,Shopping,$3.50,Sarah,No,Tape for School
+10/1/2022 14:48:48,Food,$30.00,Roland,Yes,Pavement
+10/1/2022 14:49:34,Bills,"$1,500.00",Roland,No,Rent - Roland's Part
+10/1/2022 14:49:49,Bills,$750.00,Sarah,No,Rent - Sarah's Part
+9/25/2022 17:07:12,Food,$13.53,Sarah,No,Pretzel at Fenway
+9/25/2022 17:08:29,Food,$10.00,Sarah,No,Pizza at school
+9/25/2022 17:10:50,Food,$13.32,Sarah,No,Lunch at PD Day
+10/4/2022 16:37:54,Bills,$475.00,Sarah,Yes,Parking Space Deposit & First Month
+10/4/2022 16:39:28,Shopping,$34.00,Sarah,No,Chelsea sweatshirt
+10/4/2022 16:39:45,Shopping,$11.63,Sarah,No,Wall calendar
+10/4/2022 19:33:22,Food,$29.00,Roland,Yes,Sufra
+10/4/2022 19:33:39,Food,$9.00,Roland,Yes,7/11
+10/4/2022 19:33:53,Bills,$30.00,Roland,Yes,Internet
+10/10/2022 18:18:27,Groceries,$70.00,Roland,Yes,Hello Fresh Week 2
+10/10/2022 18:18:40,Shopping,$66.00,Roland,Yes,Cuffys
+10/10/2022 18:19:03,Food,$139.00,Roland,Yes,Captain Parker's Pub
+10/10/2022 18:19:23,Shopping,$27.00,Roland,Yes,ISGM gift shop
+10/10/2022 18:20:16,Fun,$933.00,Roland,Yes,Tickets for Hilton Head
+10/10/2022 18:20:51,Transportation,$8.00,Roland,Yes,Parking for Target
+10/10/2022 18:21:13,Groceries,$73.00,Sarah,Yes,Groceries
+10/10/2022 18:21:45,Shopping,$34.00,Sarah,No,Chelsea Fleece
+10/10/2022 18:22:55,Shopping,$19.12,Sarah,No,Wine Glass at Cape Cod Market
+10/10/2022 18:23:11,Shopping,$12.99,Sarah,Yes,Wine
+10/10/2022 18:23:26,Food,$21.11,Sarah,Yes,Dunkin
+10/10/2022 18:23:43,Food,$10.00,Sarah,Yes,Starbucks
+10/10/2022 18:24:13,Groceries,$14.49,Sarah,Yes,Groceries
+10/10/2022 18:24:32,Shopping,$8.70,Sarah,No,Misc Stuff
+10/10/2022 18:24:56,Groceries,$10.59,Sarah,Yes,Toilet Paper and stuff
+10/10/2022 18:25:22,Food,$8.99,Sarah,Yes,ISGM Cafe
+10/17/2022 15:35:36,Miscellaneous,$12.99,Sarah,No,Canva Membership
+10/17/2022 15:35:53,Shopping,$35.05,Sarah,No,Heating Pad
+10/17/2022 15:36:08,Shopping,$31.95,Sarah,Yes,Gas
+10/17/2022 15:36:25,Shopping,$8.00,Sarah,Yes,Mugs from Flea Market
+10/17/2022 15:36:44,Food,$14.28,Sarah,No,Starbucks
+10/17/2022 15:37:06,Food,$34.73,Sarah,Yes,Pavement
+10/17/2022 15:37:20,Miscellaneous,$2.13,Sarah,No,Google storage
+10/17/2022 15:40:34,Groceries,$81.77,Sarah,Yes,Target
+10/17/2022 15:41:15,Shopping,$68.98,Sarah,No,Shoes
+10/17/2022 15:43:00,Shopping,$32.60,Sarah,No,"Target (Balls, Pens)"
+10/17/2022 15:43:30,Transportation,$25.00,Sarah,Yes,EZ Pass
+10/17/2022 15:44:01,Food,$6.94,Sarah,No,Bubble tea
+10/31/2022 17:05:22,Fun,$11.99,Sarah,No,Book
+10/31/2022 17:05:37,Food,$11.66,Sarah,Yes,Starbucks
+10/31/2022 17:05:54,Food,$3.80,Sarah,No,Chipotle
+10/31/2022 17:06:24,Food,$12.31,Sarah,Yes,Starbucks
+10/31/2022 17:06:35,Bills,$2.13,Roland,No,Google Storage
+10/31/2022 17:07:27,Fun,$228.00,Sarah,Yes,Kirk Cousins AirBnB
+10/31/2022 17:07:42,Food,$17.80,Sarah,Yes,7-11
+10/31/2022 17:07:55,Food,$12.31,Sarah,Yes,Starbucks
+10/31/2022 17:08:16,Transportation,$4.80,Sarah,Yes,Charlie ticket
+10/31/2022 17:08:38,Fun,$169.18,Sarah,Yes,Lewis Capaldi tickets
+10/31/2022 17:09:05,Bills,$4.99,Sarah,No,Spotify
+10/31/2022 17:09:26,Food,$11.45,Sarah,Yes,Starbucks
+10/31/2022 17:09:38,Food,$4.00,Sarah,No,Chipotle
+10/31/2022 17:09:58,Shopping,$25.00,Sarah,No,Secret Santa gift (Kured)
+10/31/2022 17:10:12,Miscellaneous,$1.00,Sarah,No,TpT
+10/31/2022 17:10:30,Food,$25.15,Sarah,Yes,El Pelon dinner
+10/31/2022 17:10:44,Miscellaneous,$8.00,Sarah,No,TpT
+10/31/2022 17:11:11,Transportation,$22.00,Sarah,Yes,Uber
+10/31/2022 17:11:25,Shopping,$33.37,Sarah,No,Jacket & Purse
+10/31/2022 17:11:38,Food,$12.31,Sarah,Yes,Starbucks
+10/31/2022 17:12:47,Fun,$27.32,Sarah,Yes,Improv tickets
+10/31/2022 17:12:54,Groceries,$25.00,Roland,Yes,Target
+10/31/2022 17:13:04,Shopping,$21.99,Sarah,No,Secret Santa (candle)
+10/31/2022 17:13:36,Bills,$50.00,Roland,Yes,Laundry Machine
+10/31/2022 17:13:57,Shopping,$10.57,Sarah,No,Duck for Gma
+10/31/2022 17:14:12,Food,$35.58,Sarah,Yes,Blaze
+10/31/2022 17:14:37,Transportation,$25.00,Sarah,No,EZ Pass
+10/31/2022 17:14:37,Bills,$62.00,Roland,Yes,Motor Vehicle Excise Tax
+10/31/2022 17:14:53,Transportation,$120.00,Roland,Yes,Parking Ticket
+10/31/2022 17:14:59,Shopping,$71.03,Sarah,Yes,Target
+10/31/2022 17:15:11,Bills,$164.92,Roland,Yes,Liberty Mutual
+10/31/2022 17:15:12,Transportation,$37.49,Sarah,No,Gas
+10/31/2022 17:16:19,Food,$22.31,Roland,Yes,Subway after shots
+10/31/2022 17:16:28,Fun,$63.34,Sarah,No,Birthday gift
+10/31/2022 17:16:46,Food,$20.81,Roland,Yes,Chipotle
+10/31/2022 17:16:58,Groceries,$88.30,Roland,Yes,Hello Fresh
+10/31/2022 17:17:15,Food,$22.00,Roland,Yes,7/11
+10/31/2022 17:17:27,Shopping,$63.85,Sarah,No,Amazon shopping
+10/31/2022 17:17:40,Fun,$36.80,Roland,Yes,Improv Asylum - Drinks
+10/31/2022 17:17:53,Transportation,$9.00,Roland,Yes,T Tickets
+10/31/2022 17:18:16,Groceries,$54.72,Roland,Yes,Target
+10/31/2022 17:18:28,Groceries,$82.91,Roland,Yes,Hello Fresh
+10/31/2022 17:18:42,Food,$20.00,Roland,Yes,McDonalds
+10/31/2022 17:18:57,Fun,$454.42,Roland,Yes,Tickets for Cousins Weekend
+10/31/2022 17:19:09,Food,$40.00,Roland,Yes,Bennets
+10/31/2022 17:19:43,Food,$15.00,Roland,Yes,Chipotle
+11/5/2022 21:07:34,Miscellaneous,$9.02,Sarah,No,Hair catcher
+11/5/2022 21:08:04,Shopping,$20.98,Sarah,No,Clothes
+11/5/2022 21:08:15,Shopping,$33.85,Sarah,No,Clothing
+11/5/2022 21:08:31,Shopping,$20.31,Sarah,No,Wig
+11/5/2022 21:08:46,Food,$12.31,Sarah,Yes,Starbucks
+11/5/2022 21:09:01,Food,$31.94,Sarah,Yes,Sufra
+11/5/2022 21:09:25,Fun,$18.50,Sarah,No,Ticket insurance
+11/5/2022 21:09:59,Miscellaneous,$12.99,Sarah,No,Canva
+11/5/2022 21:10:14,Fun,$18.50,Sarah,No,Ticket insurance 2
+11/5/2022 21:10:32,Fun,$181.95,Sarah,Yes,Louis tickets
+11/5/2022 21:10:46,Fun,$112.95,Sarah,No,Louis tickets 2
+11/5/2022 21:11:01,Transportation,$13.39,Sarah,Yes,Uber
+11/5/2022 21:11:18,Food,$23.97,Sarah,Yes,Pavement
+11/5/2022 21:11:39,Fun,$211.00,Sarah,No,Jessie venmo for cousins weekend
+11/5/2022 21:11:57,Miscellaneous,$5.99,Sarah,No,Louis
+11/5/2022 21:12:13,Miscellaneous,$2.13,Sarah,No,Google storage
+11/5/2022 21:12:29,Food,$18.27,Sarah,No,Bennett's
+11/5/2022 21:13:26,Fun,$18.05,Sarah,No,Destiny gift 1
+11/5/2022 21:13:54,Miscellaneous,$21.92,Sarah,No,Classroom stuff
+11/5/2022 21:14:10,Miscellaneous,$1.00,Sarah,No,TpT
+11/5/2022 21:14:29,Miscellaneous,$4.99,Sarah,No,Spotify
+11/5/2022 21:14:56,Fun,$128.09,Sarah,No,Louis tickets 3 (others are up for sale)
+11/5/2022 21:15:13,Miscellaneous,$18.00,Sarah,No,Ticket insurance 3
+11/5/2022 21:15:27,Transportation,$28.02,Sarah,No,Gas
+11/5/2022 21:15:46,Shopping,$46.64,Sarah,No,itk
+11/5/2022 21:16:19,Shopping,$61.84,Sarah,No,Christmas gift :)
+11/5/2022 21:17:03,Shopping,$10.51,Sarah,No,Schuler gift
+11/5/2022 21:18:19,Bills,$915.00,Sarah,No,Rent/Parking
+11/5/2022 21:18:34,Shopping,$23.00,Sarah,No,Kim
+11/5/2022 21:18:49,Miscellaneous,$5.60,Sarah,No,TpT
+11/5/2022 21:22:36,Fun,28.68,Sarah,No,Bookstore
+11/5/2022 21:22:56,Shopping,86.23,Sarah,Yes,Katie & Dan gift
+11/5/2022 21:23:13,Shopping,26.79,Sarah,No,Destiny gift 2
+11/5/2022 21:23:26,Transportation,25,Sarah,No,EZ Pass refill
+11/5/2022 21:23:48,Food,16.33,Sarah,Yes,Lox Stock & Bagels
+11/5/2022 21:23:58,Shopping,5.19,Sarah,No,Target
+11/5/2022 21:24:12,Food,5.19,Sarah,Yes,7-11
+11/5/2022 21:24:28,Groceries,96.68,Sarah,Yes,Target
+11/5/2022 21:25:18,Food,10.38,Sarah,Yes,Starbucks
+11/5/2022 21:25:34,Transportation,25,Sarah,Yes,EZ Pass refill
+11/5/2022 21:25:47,Food,19.21,Sarah,Yes,College Pizza
+11/5/2022 21:25:59,Food,9.97,Sarah,Yes,7-11
+11/5/2022 21:28:44,Shopping,20,Sarah,No,Destiny gift 3
+11/5/2022 21:29:15,Groceries,14.12,Sarah,No,Target
+11/5/2022 21:29:27,Food,4.91,Sarah,No,Dunkin
+11/5/2022 21:29:46,Shopping,44.38,Sarah,Yes,Xmas sweaters
+11/5/2022 21:30:06,Groceries,124.6,Sarah,Yes,Target
+11/5/2022 21:30:22,Transportation,50,Sarah,Yes,EZ Pass refill
+12/5/2022 21:35:51,Food,25,Sarah,Yes,Al's
+12/5/2022 21:36:47,Shopping,21.5,Sarah,No,Destiny gift 4
+12/5/2022 21:37:16,Shopping,10.61,Sarah,No,Schuler gift 2
+12/5/2022 21:37:39,Transportation,11.93,Sarah,Yes,Uber in DC w/ Abby & Matt
+12/5/2022 21:37:53,Transportation,34.29,Sarah,No,Gas
+12/5/2022 21:38:09,Fun,50,Sarah,Yes,DC payments for Em
+12/5/2022 21:39:02,Food,11.5,Sarah,No,Anna venmo - DC weekend
+12/5/2022 21:39:42,Shopping,63.74,Sarah,Yes,Grocery cart
+12/5/2022 21:39:55,Shopping,100,Sarah,No,Christmas
+12/5/2022 21:40:45,Food,9.07,Sarah,Yes,7-11
+12/5/2022 21:40:59,Shopping,70.98,Sarah,Yes,Target
+12/5/2022 21:41:23,Shopping,36.95,Sarah,No,Bitty & Beau's/Jessie's gift
+12/9/2022 15:01:35,Shopping,137.18,Sarah,No,Various Xmas shopping
+12/9/2022 15:02:10,Groceries,42.85,Sarah,Yes,Target
+11/1/2022 12:00:00,Food,3.89,Roland,Yes,7/11
+11/1/2022 12:00:00,Transportation,43.75,Roland,Yes,Gas
+11/1/2022 12:00:00,Bills,154.69,Roland,Yes,Car Insurance
+11/1/2022 12:00:00,Food,28.86,Roland,Yes,Snacks?
+11/1/2022 12:00:00,Shopping,438,Roland,Yes,TV and Soundbar
+11/1/2022 12:00:00,Bills,154.69,Roland,Yes,Car Insurance
+11/1/2022 12:00:00,Food,15,Roland,Yes,College Pizza
+11/1/2022 12:00:00,Groceries,51,Roland,Yes,Target
+11/1/2022 12:00:00,Food,9,Roland,Yes,Subway
+11/1/2022 12:00:00,Bills,30,Roland,Yes,Internet
+11/1/2022 12:00:00,Food,26,Roland,Yes,Chipotle
+11/1/2022 12:00:00,Food,14,Roland,Yes,Dunkin
+11/1/2022 12:00:00,Food,110.31,Roland,Yes,Bartaco - Connecticut
+11/1/2022 12:00:00,Food,58.11,Roland,Yes,Panera - Connecticut
+11/1/2022 12:00:00,Groceries,5,Roland,Yes,Target (Starbucks?)
+11/1/2022 12:00:00,Shopping,127.55,Roland,Yes,Marshalls (Connecticut)
+11/1/2022 12:00:00,Groceries,63.57,Roland,Yes,Target
+11/1/2022 12:00:00,Food,23.52,Roland,Yes,College Pizza
+11/1/2022 12:00:00,Food,28,Roland,Yes,Chipotle
+11/1/2022 12:00:00,Food,32.37,Roland,Yes,Blaze Pizza
+11/1/2022 12:00:00,Transportation,9.6,Roland,Yes,T rides to Celtics Game
+11/1/2022 12:00:00,Food,17,Roland,Yes,Celtics Game Food
+11/1/2022 12:00:00,Food,30,Roland,Yes,College Pizza
+11/1/2022 12:00:00,Groceries,125,Roland,Yes,Target
+11/1/2022 12:00:00,Food,102.72,Roland,Yes,Buttermilk & Bourbon
+11/1/2022 12:00:00,Food,25.65,Roland,Yes,7/11
+11/1/2022 12:00:00,Food,16.75,Roland,Yes,Chipotle
+11/1/2022 12:00:00,Food,41.2,Roland,Yes,BISq - Time Out Market
+11/1/2022 12:00:00,Groceries,90,Roland,Yes,Target
+11/1/2022 12:00:00,Food,14.5,Roland,Yes,College Pizza
+11/1/2022 12:00:00,Food,23,Roland,Yes,Taco Bell
+11/1/2022 12:00:00,Food,31.52,Roland,Yes,College Pizza
+11/1/2022 12:00:00,Groceries,78,Roland,Yes,Hello Fresh
+11/1/2022 12:00:00,Food,29.21,Roland,Yes,Blaze Pizza
+11/1/2022 12:00:00,Food,10,Roland,Yes,7/11
+12/1/2022 12:00:00,Transportation,35,Roland,Yes,Bag Fees for Jetblue
+12/1/2022 12:00:00,Transportation,95,Roland,Yes,Jet Blue Bag Fees
+12/1/2022 12:00:00,Food,15.62,Roland,Yes,Ice Cream in DC
+12/1/2022 12:00:00,Bills,30,Roland,Yes,Internet
+12/1/2022 12:00:00,Food,33.88,Roland,Yes,Smashburger
+12/1/2022 12:00:00,Food,4.43,Roland,Yes,Airport snacks
+12/1/2022 12:00:00,Food,11.74,Roland,Yes,College Pizza
+12/1/2022 12:00:00,Food,37.18,Roland,Yes,Chipotle
+12/1/2022 12:00:00,Food,10,Roland,Yes,7/11
+12/1/2022 12:00:00,Food,13.32,Roland,Yes,Chipotle
+12/1/2022 12:00:00,Food,8.56,Roland,Yes,Sufra - Fries
+12/1/2022 12:00:00,Groceries,15,Roland,Yes,Target
+12/1/2022 12:00:00,Transportation,4.8,Roland,Yes,T Rides to Boston Aquarium
+12/1/2022 12:00:00,Shopping,80,Roland,Yes,Boston Aquarium Gift Shops
+12/1/2022 12:00:00,Food,13,Roland,Yes,DePasquale's Homemade Pasta
+12/1/2022 12:00:00,Shopping,19.11,Roland,Yes,Christmas in Boston
+12/1/2022 12:00:00,Shopping,30,Roland,No,Ashley Eisenman AR
+12/1/2022 12:00:00,Groceries,69.83,Roland,Yes,Hello Fresh
+12/1/2022 12:00:00,Transportation,4.8,Roland,Yes,T rides
+12/1/2022 12:00:00,Shopping,123,Roland,Yes,Target
+12/1/2022 12:00:00,Food,32.27,Roland,Yes,Blaze Pizza
+12/1/2022 12:00:00,Food,11,Roland,Yes,7/11
+12/1/2022 12:00:00,Food,40,Roland,Yes,Chipotle
+12/1/2022 12:00:00,Food,29.21,Roland,Yes,Blaze Pizza
+12/1/2022 12:00:00,Transportation,9.6,Roland,Yes,T Rides
+12/1/2022 12:00:00,Food,65.91,Roland,Yes,Food at TD Garden
+12/1/2022 12:00:00,Food,18.47,Roland,Yes,Amazon TD Garden Market
+12/1/2022 12:00:00,Food,7.38,Roland,Yes,Roadtrip Snacks
+12/1/2022 12:00:00,Food,17.38,Roland,Yes,Ice Cream at Stewarts
+11/1/2022 12:00:00,Bills,1585,Roland,No,Rent
+12/1/2022 12:00:00,Bills,1585,Roland,No,Rent
+12/1/2022 12:00:00,Bills,915,Sarah,No,Rent
+1/1/2023 13:06:27,Groceries,48.85,Sarah,Yes,Target
+12/1/2022 12:00:00,Shopping,140,Sarah,No,Secret Santa - Target
+12/1/2022 12:00:00,Food,22.43,Sarah,Yes,7/11
+12/1/2022 12:00:00,Fun,7,Sarah,Yes,Photobooth
+12/1/2022 12:00:00,Groceries,15.82,Sarah,Yes,Target
+12/1/2022 12:00:00,Food,12.52,Sarah,Yes,Starbucks
+12/1/2022 12:00:00,Food,33.54,Sarah,Yes,Chipotle
+12/1/2022 12:00:00,Miscellaneous,14.2,Sarah,No,Shipping price for Secret Santa
+12/1/2022 12:00:00,Shopping,80.92,Sarah,Yes,Target
+12/1/2022 12:00:00,Shopping,17.99,Sarah,Yes,Target
+12/1/2022 12:00:00,Food,18.09,Sarah,Yes,7/11
+12/1/2022 12:00:00,Shopping,85.89,Sarah,No,Marshall's
+12/1/2022 12:00:00,Shopping,61.87,Sarah,Yes,Marshall's 2
+12/1/2022 12:00:00,Shopping,13.36,Sarah,No,Mug for Alyssa
+12/1/2022 12:00:00,Shopping,20,Sarah,No,Dunkin' gift card for Alyssa
+12/1/2022 12:00:00,Transportation,60,Sarah,No,EZ Pass
+12/1/2022 12:00:00,Miscellaneous,35,Sarah,No,Haircut
+12/1/2022 12:00:00,Fun,2.85,Sarah,No,Walgreens Pictures
+12/1/2022 12:00:00,Bills,450,Sarah,Yes,Paying M&D Olsen
+12/1/2022 12:00:00,Miscellaneous,22,Sarah,No,GoFund Me
+12/1/2022 12:00:00,Fun,183,Sarah,Yes,Celtics
+12/1/2022 12:00:00,Food,31,Sarah,Yes,Pavement
+12/1/2022 12:00:00,Transportation,8,Sarah,Yes,Uber
+12/1/2022 12:00:00,Food,100,Sarah,Yes,Brunch w/ Olsen's
+12/1/2022 12:00:00,Miscellaneous,12.99,Sarah,No,Canva Subscription
+12/1/2022 12:00:00,Miscellaneous,30,Sarah,No,Venmo for Dillen
+12/1/2022 12:00:00,Bills,79,Sarah,No,Telehealth
+12/1/2022 12:00:00,Miscellaneous,25,Sarah,No,Planbook subscription
+12/1/2022 12:00:00,Shopping,28.63,Sarah,Yes,Target
+12/1/2022 12:00:00,Miscellaneous,3.5,Sarah,No,TpT
+12/1/2022 12:00:00,Miscellaneous,2.13,Sarah,No,Google Storage
+12/1/2022 12:00:00,Food,15.07,Sarah,No,Bennett's
+12/1/2022 12:00:00,Shopping,95,Sarah,No,Marshall's
+12/1/2022 12:00:00,Shopping,5.19,Sarah,Yes,Target
+12/1/2022 12:00:00,Groceries,61.82,Sarah,Yes,Target
+12/1/2022 12:00:00,Transportation,24.41,Sarah,No,Gas
+12/1/2022 12:00:00,Miscellaneous,9.99,Sarah,No,Spotify
+12/1/2022 12:00:00,Food,9.99,Sarah,Yes,Starbucks
+12/1/2022 12:00:00,Transportation,31.73,Sarah,Yes,Gas - driving home
+12/1/2022 12:00:00,Miscellaneous,9.99,Sarah,No,Kindle
+12/1/2022 12:00:00,Food,11.02,Sarah,Yes,Starbucks
+12/1/2022 12:00:00,Food,4.27,Sarah,No,Dunkin'
+12/1/2022 12:00:00,Food,4,Sarah,No,Pizza
+12/1/2022 12:00:00,Miscellaneous,78,Sarah,Yes,DC Trip
+12/1/2022 12:00:00,Fun,35,Sarah,Yes,Bowling
+12/1/2022 12:00:00,Shopping,42.7,Sarah,No,stayitk
