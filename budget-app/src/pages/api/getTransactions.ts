@@ -66,8 +66,6 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 
   query += '\nORDER BY TIMESTAMP DESC';
 
-  console.log(query);
-  console.log(params);
 
   const transactions = await db.all(query, params);
   await db.close();
@@ -82,7 +80,6 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     notes: transaction.notes
   }));
 
-  console.log(formattedTransactions)
 
   res.status(200).json(formattedTransactions);
 }

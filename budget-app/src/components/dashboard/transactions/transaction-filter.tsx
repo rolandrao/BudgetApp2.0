@@ -5,11 +5,12 @@ import Card from '@mui/material/Card';
 import InputAdornment from '@mui/material/InputAdornment';
 import OutlinedInput from '@mui/material/OutlinedInput';
 import { MagnifyingGlass as MagnifyingGlassIcon } from '@phosphor-icons/react/dist/ssr/MagnifyingGlass';
-import { TextField, MenuItem, Checkbox, FormControlLabel, Select, InputLabel, FormControl, Box, Stack, Grow } from '@mui/material';
+import { TextField, MenuItem, Checkbox, FormControlLabel, Select, InputLabel, FormControl, Box, Stack, Grow, Button } from '@mui/material';
 import { DatePicker } from '@mui/x-date-pickers/DatePicker';
 import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 import dayjs from 'dayjs';
+import { X } from '@phosphor-icons/react/dist/ssr/X';
 
 
 interface TransactionFiltersProps {
@@ -81,6 +82,20 @@ export function TransactionFilters({
     }
 
   };
+
+  const handleClearFilters = () => {
+    setStartDate(null);
+    setEndDate(null);
+    setCategory('');
+    setMinAmount('');
+    setInputValueMin('');
+    setMaxAmount('');
+    setInputValueMax('');
+    setRoommates([]);
+    setShared(false);
+    setNotes('');
+    setInputValueNotes('');
+  }
 
   return (
     <Card sx={{ p: 2 }}>
@@ -183,6 +198,17 @@ export function TransactionFilters({
           }
           sx={{ width: 600 }}
         />
+        <label >
+          <Button
+            variant="contained"
+            component="span"
+            startIcon={<X size={32} />}
+            onClick={handleClearFilters}
+          >
+            Clear Filters
+          </Button>
+        </label>
+
       </Stack>
     </Card>
   );

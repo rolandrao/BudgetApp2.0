@@ -54,6 +54,13 @@ export function TransactionTable({
     return rows.map((transaction) => transaction.id);
   }, [rows]);
 
+  const formatCurrency = (value: number) => {
+    return new Intl.NumberFormat('en-US', {
+      style: 'currency',
+      currency: 'USD'
+    }).format(value);
+  }
+
   return (
     <Card>
       <Box sx={{ overflowX: 'auto' }}>
@@ -74,7 +81,7 @@ export function TransactionTable({
                 <TableRow hover key={row.id}>
                   <TableCell sx={{ width: '200px' }}>{dayjs(row.timestamp).format('YYYY-MM-DD HH:mm:ss')}</TableCell>
                   <TableCell sx={{ width: '150px' }}>{row.category}</TableCell>
-                  <TableCell sx={{ width: '100px' }}>{row.amount}</TableCell>
+                  <TableCell sx={{ width: '100px' }}>{formatCurrency(row.amount)}</TableCell>
                   <TableCell sx={{ width: '150px' }}>{row.roommate}</TableCell>
                   <TableCell sx={{ width: '100px' }}>{row.shared ? 'Yes': 'No'}</TableCell>
                   <TableCell>{row.notes}</TableCell>

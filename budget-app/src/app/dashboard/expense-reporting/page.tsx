@@ -8,7 +8,7 @@ import Grid from '@mui/material/Grid';
 import TextField from '@mui/material/TextField';
 import { Upload as UploadIcon } from '@phosphor-icons/react/dist/ssr/Upload';
 import Papa from 'papaparse';
-import { FormControl, FormControlLabel, InputLabel, MenuItem, Paper, Radio, RadioGroup, Select, SelectChangeEvent, Table, TableBody, TableCell, TableContainer, TableHead, TablePagination, TableRow } from '@mui/material';
+import { FormControl, FormControlLabel, FormLabel, InputLabel, MenuItem, Paper, Radio, RadioGroup, Select, SelectChangeEvent, Table, TableBody, TableCell, TableContainer, TableHead, TablePagination, TableRow } from '@mui/material';
 import page from '../page';
 import { parse } from 'json2csv';
 
@@ -20,6 +20,7 @@ export default function Page(): React.JSX.Element {
   const [currentRowData, setCurrentRowData] = useState<any>({});
   const [page, setPage] = useState(0);
   const [rowsPerPage, setRowsPerPage] = useState(25);
+  const [roommate, setRoommate] = useState('Roland');
 
   const handleFileChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setSelectedFiles(event.target.files);
@@ -67,7 +68,7 @@ export default function Page(): React.JSX.Element {
                   Timestamp: row['Transaction Date'], // Rename column
                   Amount: -row['Amount'], // Rename column
                   Category: '', // Set category
-                  Roommate: 'Roland', // TODO MAKE THIS DYNAMIC
+                  Roommate: roommate, // TODO MAKE THIS DYNAMIC
                   Shared: '', // Keep column
                   Notes: row['Description'], // Keep column
                 };
@@ -79,7 +80,7 @@ export default function Page(): React.JSX.Element {
                   Timestamp: row['Transaction Date'], // Rename column
                   Amount: row['Amount (USD)'], // Rename column
                   Category: '', // Set category
-                  Roommate: 'Roland', // TODO MAKE THIS DYNAMIC
+                  Roommate: roommate, // TODO MAKE THIS DYNAMIC
                   Shared: '', // Keep column
                   Notes: row['Description'], // Keep column
                 };
@@ -91,7 +92,7 @@ export default function Page(): React.JSX.Element {
                   Timestamp: row['Transaction Date'], // Rename column
                   Amount: row['Debit'], // Rename column
                   Category: '', // Set category
-                  Roommate: 'Sarah', // TODO MAKE THIS DYNAMIC
+                  Roommate: roommate, // TODO MAKE THIS DYNAMIC
                   Shared: '', // Keep column
                   Notes: row['Description'], // Keep column
                 };
@@ -179,6 +180,21 @@ export default function Page(): React.JSX.Element {
     setPage(0);
   };
 
+  const handleRoommateChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setRoommate(event.target.value);
+  }
+
+  const handleBackToStep2 = () => {
+    setStep(2);
+  }
+
+  const formatCurrency = (value: number) => {
+    return new Intl.NumberFormat('en-US', {
+      style: 'currency',
+      currency: 'USD'
+    }).format(value);
+  }
+
   const handleConfirmAndSubmit = async () => {
 
     const filteredData = preprocessedData.filter(row => row.Shared != 'N/A');
@@ -226,31 +242,51 @@ export default function Page(): React.JSX.Element {
       </Stack>
       {step === 1 && (
         <Box>
-          <input
-            type="file"
-            accept=".csv"
-            multiple
-            onChange={handleFileChange}
-            style={{ display: 'none' }}
-            id="file-upload"
-          />
-          <label htmlFor="file-upload">
-            <Button
-              variant="contained"
-              component="span"
-              startIcon={<UploadIcon />}
-            >
-              Upload CSV Files
-            </Button>
-          </label>
-          <Button
-            variant="contained"
-            onClick={handleUpload}
-            disabled={!selectedFiles}
-            sx={{ ml: 2 }}
-          >
-            Process Upload
-          </Button>
+          <Grid container spacing={3}>
+            <Grid item xs={12}>
+              <input
+                type="file"
+                accept=".csv"
+                multiple
+                onChange={handleFileChange}
+                style={{ display: 'none' }}
+                id="file-upload"
+              />
+              <label htmlFor="file-upload">
+                <Button
+                  variant="contained"
+                  component="span"
+                  startIcon={<UploadIcon />}
+                >
+                  Upload CSV Files
+                </Button>
+              </label>
+            </Grid>
+            <Grid item xs={12}>
+              <FormControl component="fieldset">
+                <FormLabel component="legend">Roommate</FormLabel>
+                <RadioGroup
+                  aria-label="roommate"
+                  name="roommate"
+                  value={roommate}
+                  onChange={handleRoommateChange}
+                >
+                  <FormControlLabel value="Roland" control={<Radio />} label="Roland" />
+                  <FormControlLabel value="Sarah" control={<Radio />} label="Sarah" />
+                </RadioGroup>
+              </FormControl>
+            </Grid>
+            <Grid item xs={12}>
+              <Button
+                variant="contained"
+                onClick={handleUpload}
+                disabled={!selectedFiles}
+                sx={{ ml: 2 }}
+              >
+                Process Upload
+              </Button>
+            </Grid>
+          </Grid>
         </Box>
       )}
       {step === 2 && preprocessedData.length > 0 && (
@@ -274,7 +310,7 @@ export default function Page(): React.JSX.Element {
               <TextField
                 label="Amount"
                 name="Amount"
-                value={currentRowData.Amount || ''}
+                value={formatCurrency(currentRowData.Amount) || ''}
                 onChange={handleInputChange}
                 fullWidth
                 margin="normal"
@@ -393,6 +429,13 @@ export default function Page(): React.JSX.Element {
             >
               Download CSV
             </Button>
+            <Button
+              variant="contained"
+              onClick={handleBackToStep2}
+            >
+              Back to Step 2
+            </Button>
+
           </Stack>
           <TableContainer component={Paper}>
             <Table>
@@ -410,7 +453,7 @@ export default function Page(): React.JSX.Element {
                 {preprocessedData.slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage).map((row, index) => (
                   <TableRow key={index}>
                     <TableCell>{row.Timestamp}</TableCell>
-                    <TableCell>{row.Amount}</TableCell>
+                    <TableCell>{formatCurrency(row.Amount)}</TableCell>
                     <TableCell>{row.Category}</TableCell>
                     <TableCell>{row.Roommate}</TableCell>
                     <TableCell>{row.Shared}</TableCell>

@@ -25,11 +25,10 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     const db = await openDatabase();
 
     const insertPromises = preprocessedData.map(row => {
-        console.log("INSERTING ROW", row);
       const { Timestamp, Amount, Category, Roommate, Shared, Notes } = row;
       return db.run(
         'INSERT INTO transactions (timestamp, amount, category, roommate, shared, notes) VALUES (?, ?, ?, ?, ?, ?)',
-        [Timestamp, Amount, Category, Roommate, 1, Notes]
+        [Timestamp, Amount, Category, Roommate, Shared === "Yes" ? 1 : 0, Notes]
       );
     });
 

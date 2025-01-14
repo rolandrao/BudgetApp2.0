@@ -76,6 +76,14 @@ function useChartOptions(labels: string[]): ApexOptions {
     states: { active: { filter: { type: 'none' } }, hover: { filter: { type: 'none' } } },
     stroke: { width: 0 },
     theme: { mode: theme.palette.mode },
-    tooltip: { fillSeriesColor: false },
+    tooltip: { 
+      fillSeriesColor: false,
+      y: {
+        formatter: (value) => new Intl.NumberFormat('en-US', {
+          style: 'currency',
+          currency: 'USD',
+        }).format(value)
+      }
+    },
   };
 } 

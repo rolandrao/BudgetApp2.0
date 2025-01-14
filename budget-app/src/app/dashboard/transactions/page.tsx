@@ -68,7 +68,6 @@ export default function Page(): React.JSX.Element {
   }
 
   const paginatedTransactions = applyPagination(transactions, page, rowsPerPage);
-  console.log(paginatedTransactions);
 
   return (
     <Stack spacing={3}>
