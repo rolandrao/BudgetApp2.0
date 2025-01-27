@@ -1,17 +1,19 @@
 'use client';
 
-import fs from 'fs';
 import type { User } from '@/types/user';
-import { parseAppSegmentConfig } from 'next/dist/build/segment-config/app/app-segment-config';
-import path from 'path';
 
+function generateToken(): string {
+  const arr = new Uint8Array(12);
+  window.crypto.getRandomValues(arr);
+  return Array.from(arr, (v) => v.toString(16).padStart(2, '0')).join('');
+}
 
 const user = {
   id: 'USR-000',
   avatar: '/assets/avatar.png',
-  firstName: 'Sofia',
-  lastName: 'Rivers',
-  email: 'sofia@devias.io',
+  firstName: 'Roland',
+  lastName: 'Rao',
+  email: 'rolandrao@gmail.com',
 } satisfies User;
 
 export interface SignUpParams {
@@ -35,33 +37,10 @@ export interface ResetPasswordParams {
 }
 
 class AuthClient {
-  private usersFilePath = 'data/users.json';
-
-  private readUsers() {
-    const data = fs.readFileSync(this.usersFilePath, 'utf-8');
-    return JSON.parse(data);
-  }
-
-  private writeUsers(users: any) {
-    fs.writeFileSync(this.usersFilePath, JSON.stringify(users, null, 2), 'utf-8');
-  }
-
-  async signUp(params: SignUpParams): Promise<{ error?: string }> {
+  async signUp(_: SignUpParams): Promise<{ error?: string }> {
     // Make API request
 
-    const {email, password} = params;
-    const users = this.readUsers();
-
     // We do not handle the API, so we'll just generate a token and store it in localStorage.
-    const userExists = users.some((user: any) => user.email === email);
-    if (userExists) {
-      return { error: 'User already exists'};
-    }
-
-    users.push({email, password});
-    this.writeUsers(users);
-
-
     const token = generateToken();
     localStorage.setItem('custom-auth-token', token);
 
@@ -74,12 +53,13 @@ class AuthClient {
 
   async signInWithPassword(params: SignInWithPasswordParams): Promise<{ error?: string }> {
     const { email, password } = params;
-    const users = this.readUsers();
 
-    const user = users.find((user: any) => user.email === email && user.password === password);
-    if (!user) {
-      return { error: 'Invalid email or password' };
-    } 
+    // Make API request
+
+    // We do not handle the API, so we'll check if the credentials match with the hardcoded ones.
+    if (email !== 'rolandrao@gmail.com' || password !== 'BudgetAppPassword') {
+      return { error: 'Invalid credentials' };
+    }
 
     const token = generateToken();
     localStorage.setItem('custom-auth-token', token);
@@ -113,10 +93,6 @@ class AuthClient {
 
     return {};
   }
-}
-
-function generateToken() {
-  return Math.random().toString(36).substring(2);
 }
 
 export const authClient = new AuthClient();
