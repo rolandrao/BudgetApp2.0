@@ -35,11 +35,21 @@ export default function Page(): React.JSX.Element {
   const [notes, setNotes] = useState('');
   const [transactions, setTransactions] = useState<Transaction[]>([]);
   const [open, setOpen] = useState(false);
+  const [openEdit, setOpenEdit] = useState(false);
   const [formData, setFormData] = useState({
     Timestamp: '',
     Amount: '',
     Category: '',
     Shared: 'Yes',
+    Roommate: '',
+    Notes: ''
+  })
+  const [editFormData, setEditFormData] = useState({
+    id: '',
+    Timestamp: '',
+    Amount: '',
+    Category: '',
+    Shared: '',
     Roommate: '',
     Notes: ''
   })
@@ -74,6 +84,9 @@ export default function Page(): React.JSX.Element {
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
 
+  const handleOpenEdit = () => setOpenEdit(true);
+  const handleCloseEdit = () => setOpenEdit(false);
+
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = event.target;
     setFormData((prevData) => ({
@@ -82,8 +95,23 @@ export default function Page(): React.JSX.Element {
     }));
   };
 
+  const handleEditChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const { name, value } = event.target;
+    setEditFormData((prevData) => ({
+      ...prevData,
+      [name]: value
+    }));
+  };
+
   const handleDateChange = (date: dayjs.Dayjs | null) => {
     setFormData((prevData) => ({
+      ...prevData,
+      Timestamp: date ? date.toISOString() : ''
+    }));
+  };
+
+  const handleEditDateChange = (date: dayjs.Dayjs | null) => {
+    setEditFormData((prevData) => ({
       ...prevData,
       Timestamp: date ? date.toISOString() : ''
     }));
@@ -119,6 +147,51 @@ export default function Page(): React.JSX.Element {
     handleClose();
   };
 
+  const handleSaveChanges = async () => {
+    try {
+      const response = await fetch('/api/update', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify([editFormData])
+      });
+      if (response.ok){
+        console.log('Record Updated Successfully');
+        fetchTransactions();
+      } else{
+        console.error('Failed to update record');
+      }
+    } catch (error) {
+      console.log('An error has occurred: ', error);
+    }
+    console.log(editFormData);
+    setEditFormData({
+      id: '',
+      Timestamp: '',
+      Amount: '',
+      Category: '',
+      Shared: 'Yes',
+      Roommate: '',
+      Notes: ''
+    });
+    handleCloseEdit();
+  }
+
+
+  const handleRowClick = (transaction: Transaction) => {
+    setEditFormData({
+      id: transaction.id,
+      Timestamp: transaction.timestamp,
+      Amount: transaction.amount.toString(),
+      Category: transaction.category,
+      Shared: transaction.shared ? 'Yes' : 'No',
+      Roommate: transaction.roommate,
+      Notes: transaction.notes
+    });
+    handleOpenEdit();
+  };
+
   const handlePageChange = (event: unknown | null, newPage: number) => {
     setPage(newPage);
   }
@@ -128,6 +201,7 @@ export default function Page(): React.JSX.Element {
     setPage(0);
   }
 
+
   const paginatedTransactions = applyPagination(transactions, page, rowsPerPage);
 
   return (
@@ -135,6 +209,93 @@ export default function Page(): React.JSX.Element {
       <Button variant="contained" onClick={handleOpen} style={{ position: 'absolute', top: 100, right: 100 }}>
         Add Record
       </Button>
+      {/* THIS IS THE MODAL FOR EDITING DATA */}
+      <Modal open={openEdit} onClose={handleCloseEdit}>
+        <Box sx={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', width: 800, bgcolor: 'background.paper', boxShadow: 24, p: 4 }}>
+          <Typography variant="h6" component="h2">
+            Edit Record
+          </Typography>
+          <Grid container spacing={2}>
+            <Grid item xs={4}>
+              <DatePicker
+                label="Timestamp"
+                value={dayjs(editFormData.Timestamp)}
+                onChange={handleEditDateChange}
+                // renderInput={(params) => <TextField {...params} fullWidth margin="normal" />}
+              />
+            </Grid>
+            <Grid item xs={4}>
+              <TextField
+                label="Amount"
+                name="Amount"
+                value={editFormData.Amount}
+                onChange={handleEditChange}
+                fullWidth
+                margin="normal"
+              />
+            </Grid>
+            <Grid item xs={4}>
+              <FormControl fullWidth margin="normal">
+                <InputLabel>Roommate</InputLabel>
+                <Select
+                  name="Roommate"
+                  value={editFormData.Roommate}
+                  onChange={handleEditChange}
+                >
+                  <MenuItem value="Roland">Roland</MenuItem>
+                  <MenuItem value="Sarah">Sarah</MenuItem>
+                </Select>
+              </FormControl>
+            </Grid>
+            <Grid item xs={12}>
+              <FormControl component="fieldset" margin="normal">
+                <Typography component="legend">Shared</Typography>
+                <RadioGroup
+                  name="Shared"
+                  value={editFormData.Shared}
+                  onChange={handleEditChange}
+                  row
+                >
+                  <FormControlLabel value="Yes" control={<Radio />} label="Yes" />
+                  <FormControlLabel value="No" control={<Radio />} label="No" />
+                </RadioGroup>
+              </FormControl>
+            </Grid>
+          </Grid>
+          <FormControl component="fieldset" margin="normal">
+            <Typography component="legend">Category</Typography>
+            <RadioGroup
+              name="Category"
+              value={editFormData.Category}
+              onChange={handleEditChange}
+              row
+            >
+              <FormControlLabel value="Bills" control={<Radio />} label="Bills" />
+              <FormControlLabel value="Cat" control={<Radio />} label="Cat" />
+              <FormControlLabel value="Food" control={<Radio />} label="Food" />
+              <FormControlLabel value="Fun" control={<Radio />} label="Fun" />
+              <FormControlLabel value="Groceries" control={<Radio />} label="Groceries" />
+              <FormControlLabel value="Miscellaneous" control={<Radio />} label="Miscellaneous" />
+              <FormControlLabel value="Shopping" control={<Radio />} label="Shopping" />
+              <FormControlLabel value="Subscriptions" control={<Radio />} label="Subscriptions" />
+              <FormControlLabel value="Transportation" control={<Radio />} label="Transportation" />
+              <FormControlLabel value="Uber Eats" control={<Radio />} label="Uber Eats" />
+            </RadioGroup>
+          </FormControl>
+          <TextField
+            label="Notes"
+            name="Notes"
+            value={editFormData.Notes}
+            onChange={handleEditChange}
+            fullWidth
+            margin="normal"
+          />
+          <Button variant="contained" onClick={handleSaveChanges} sx={{ mt: 2 }}>
+            Save Changes
+          </Button>
+        </Box>
+      </Modal>
+      {/* THIS IS THE MODAL FOR ADDING ONE RECORD TO THE DATABASE MANUALLY */}
       <Modal open={open} onClose={handleClose}>
         <Box sx={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', width: 800, bgcolor: 'background.paper', boxShadow: 24, p: 4 }}>
           <Typography variant="h6" component="h2">
@@ -246,6 +407,7 @@ export default function Page(): React.JSX.Element {
       />
       <TransactionTable
         count={transactions.length}
+        onRowClick={handleRowClick}
         page={page}
         rows={paginatedTransactions}
         rowsPerPage={rowsPerPage}

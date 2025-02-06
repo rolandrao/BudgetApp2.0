@@ -34,6 +34,7 @@ export interface Transaction {
 }
 
 interface TransactionsTableProps {
+  onRowClick: (transaction: Transaction) => void;
   count?: number;
   page?: number;
   rows?: Transaction[];
@@ -43,6 +44,7 @@ interface TransactionsTableProps {
 }
 
 export function TransactionTable({
+  onRowClick,
   count = 0,
   page = 0,
   rows = [],
@@ -78,7 +80,7 @@ export function TransactionTable({
           <TableBody>
             {rows.map((row) => {
             return (
-                <TableRow hover key={row.id}>
+                <TableRow hover key={row.id} onClick={() => onRowClick(row)}>
                   <TableCell sx={{ width: '200px' }}>{dayjs(row.timestamp).format('YYYY-MM-DD HH:mm:ss')}</TableCell>
                   <TableCell sx={{ width: '150px' }}>{row.category}</TableCell>
                   <TableCell sx={{ width: '100px' }}>{formatCurrency(row.amount)}</TableCell>
