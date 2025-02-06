@@ -30,6 +30,7 @@ interface TransactionFiltersProps {
   setShared: (shared: boolean) => void;
   notes: string,
   setNotes: (notes: string) => void;
+  handleClearFilters: () => void;
 }
 
 export function TransactionFilters({
@@ -48,7 +49,8 @@ export function TransactionFilters({
   shared,
   setShared,
   notes,
-  setNotes
+  setNotes,
+  handleClearFilters
 }: TransactionFiltersProps): React.JSX.Element {
 
   const [inputValueNotes, setInputValueNotes] = React.useState(notes);
@@ -83,19 +85,12 @@ export function TransactionFilters({
 
   };
 
-  const handleClearFilters = () => {
-    setStartDate(null);
-    setEndDate(null);
-    setCategory('');
-    setMinAmount('');
+  const handleClearInputValues = () => {
     setInputValueMin('');
-    setMaxAmount('');
     setInputValueMax('');
-    setRoommates([]);
-    setShared(false);
-    setNotes('');
     setInputValueNotes('');
   }
+
 
   return (
     <Card sx={{ p: 2 }}>
@@ -187,7 +182,7 @@ export function TransactionFilters({
           </Stack>
           </FormControl>
         <OutlinedInput
-          defaultValue={inputValueNotes}
+          value={inputValueNotes}
           onChange={(event) => setInputValueNotes(event.target.value)}
           onKeyDown={handleNotesKeyDown}
           fullWidth
@@ -204,7 +199,10 @@ export function TransactionFilters({
             variant="contained"
             component="span"
             startIcon={<X size={32} />}
-            onClick={handleClearFilters}
+            onClick={() => {
+              handleClearFilters();
+              handleClearInputValues();
+            }}
           >
             Clear Filters
           </Button>

@@ -24,6 +24,8 @@ import { DatePicker } from '@mui/x-date-pickers/DatePicker';
 export default function Page(): React.JSX.Element {
   const [page, setPage] = useState(0);
   const [rowsPerPage, setRowsPerPage] = useState(25);
+  const [sortColumn, setSortColumn] = useState<keyof Transaction | null>(null);
+  const [sortOrder, setSortOrder] = useState<'asc' | 'desc'>('asc');
 
   const [startDate, setStartDate] = useState<dayjs.Dayjs | null>(null);
   const [endDate, setEndDate] = useState<dayjs.Dayjs | null>(null);
@@ -78,6 +80,19 @@ export default function Page(): React.JSX.Element {
     const data = await response.json();
 
     setTransactions(data);
+  }
+
+  const handleClearFilters = () => {
+    setStartDate(null);
+    setEndDate(null);
+    setCategory('');
+    setMinAmount('');
+    setMaxAmount('');
+    setRoommates([]);
+    setShared(false);
+    setNotes('');
+    setSortColumn('timestamp')
+    setSortOrder('desc');
   }
 
 
@@ -192,6 +207,21 @@ export default function Page(): React.JSX.Element {
     handleOpenEdit();
   };
 
+  const handleSort = (column: keyof Transaction) => {
+    const isAsc = sortColumn === column && sortOrder === 'asc';
+    setSortOrder(isAsc ? 'desc' : 'asc');
+    setSortColumn(column);
+  }
+
+  const sortedTransactions = React.useMemo(() => {
+    if (!sortColumn) return transactions;
+    return [...transactions].sort((a, b) => {
+      if (a[sortColumn] < b[sortColumn]) return sortOrder === 'asc' ? -1 : 1;
+      if (a[sortColumn] > b[sortColumn]) return sortOrder === 'asc' ? 1 : -1;
+      return 0;
+    });
+  }, [transactions, sortColumn, sortOrder]);
+
   const handlePageChange = (event: unknown | null, newPage: number) => {
     setPage(newPage);
   }
@@ -202,7 +232,7 @@ export default function Page(): React.JSX.Element {
   }
 
 
-  const paginatedTransactions = applyPagination(transactions, page, rowsPerPage);
+  const paginatedTransactions = applyPagination(sortedTransactions, page, rowsPerPage);
 
   return (
     <>
@@ -404,15 +434,19 @@ export default function Page(): React.JSX.Element {
         setShared={setShared}
         notes={notes}
         setNotes={setNotes}
+        handleClearFilters={handleClearFilters}
       />
       <TransactionTable
         count={transactions.length}
-        onRowClick={handleRowClick}
         page={page}
         rows={paginatedTransactions}
         rowsPerPage={rowsPerPage}
         onPageChange={handlePageChange}
         onRowsPerPageChange={handleRowsPerPageChange}
+        onRowClick={handleRowClick}
+        onSort={handleSort}
+        sortColumn={sortColumn}
+        sortOrder={sortOrder}
       />
     </Stack>
     </>
