@@ -352,6 +352,7 @@ export default function Page(): React.JSX.Element {
                   <FormControlLabel value="Groceries" control={<Radio />} label="Groceries" />
                   <FormControlLabel value="Miscellaneous" control={<Radio />} label="Miscellaneous" />
                   <FormControlLabel value="Shopping" control={<Radio />} label="Shopping" />
+                  <FormControlLabel value="Subscriptions" control={<Radio />} label="Subscriptions" />
                   <FormControlLabel value="Transportation" control={<Radio />} label="Transportation" />
                   <FormControlLabel value="Uber Eats" control={<Radio />} label="Uber Eats" />
                 </RadioGroup>

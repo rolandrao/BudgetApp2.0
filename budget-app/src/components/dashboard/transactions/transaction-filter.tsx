@@ -132,6 +132,7 @@ export function TransactionFilters({
             <MenuItem value="Groceries">Groceries</MenuItem>
             <MenuItem value="Miscellaneous">Miscellaneous</MenuItem>
             <MenuItem value="Shopping">Shopping</MenuItem>
+            <MenuItem value="Subscriptions">Subscriptions</MenuItem>
             <MenuItem value="Transportation">Transportation</MenuItem>
             <MenuItem value="Uber Eats">Uber Eats</MenuItem>
           </Select>
