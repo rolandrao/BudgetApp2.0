@@ -23,9 +23,9 @@ import { TextField, Checkbox, FormControlLabel } from '@mui/material';
 
 
 export default function Page(): React.JSX.Element {
-  const [yearToSee, setYearToSee] = useState(2024);
+  const [yearToSee, setYearToSee] = useState(2025);
   const [yearToSeeTotal, setYearToSeeTotal] = useState(0.0);
-  const [yearToCompare, setYearToCompare] = useState(2023);
+  const [yearToCompare, setYearToCompare] = useState(2024);
   const [yearToCompareTotal, setYearToCompareTotal] = useState(0.0);
   const [monthlyTotalsSeries, setMonthlyTotalsSeries] = useState([{ name: 'Year 1', data: []}, { name: 'Year 2', data: []}]);
   const [categoryLabels, setCategoryLabels] = useState([]);

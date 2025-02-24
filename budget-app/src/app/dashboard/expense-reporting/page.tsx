@@ -188,6 +188,24 @@ export default function Page(): React.JSX.Element {
     setStep(2);
   }
 
+  const handleMissing = () => {
+    const missingColumns: string[] = [];
+
+    preprocessedData.forEach((row, index) => {
+      if (!row.Shared) {
+        missingColumns.push(`Row ${index+1} missing Shared value`);
+      }
+      if (!row.Category) {
+        missingColumns.push(`Row ${index+1} missing Category designation`);
+      }
+    });
+    if (missingColumns.length > 0) {
+      alert(missingColumns.join('\n'));
+    }else {
+      alert("No missing columns!");
+    }
+  }
+
   const formatCurrency = (value: number) => {
     return new Intl.NumberFormat('en-US', {
       style: 'currency',
@@ -412,6 +430,14 @@ export default function Page(): React.JSX.Element {
             sx={{ mt: 2, ml: 2 }}
           >
             Finish
+          </Button>
+          <Button
+            variant="contained"
+            onClick={handleMissing}
+            disabled={allRowsClassified()}
+            sx={{ mt: 2, ml: 2}}
+          >
+            Check Data
           </Button>
         </Box>
       )}
