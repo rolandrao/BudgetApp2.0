@@ -1,0 +1,6 @@
+Transaction Date,Clearing Date,Description,Merchant,Category,Type,Amount (USD),Purchased By
+04/25/2025,04/25/2025,"ACH DEPOSIT INTERNET TRANSFER FROM ACCOUNT ENDING IN 1827","Ach Deposit Internet Transfer From Account Ending In 1827","Payment","Payment","-85.09","Roland Rao"
+04/15/2025,04/16/2025,"CHIPOTLE 3299 51-9 COMMERCE WAY PLAZA PLYMOUTH 02360 MA USA","Chipotle 3299","Restaurants","Purchase","44.08","Sarah Olsen"
+04/15/2025,04/16/2025,"DASHLANE U* DASHLANE P44 W. 18TH STREET, 4FL NEW YORK 10011 NY USA","Dashlane U* Dashlane P","Other","Purchase","35.30","Roland Rao"
+04/09/2025,04/10/2025,"CHIPOTLE 3299 51-9 COMMERCE WAY PLAZA PLYMOUTH 02360 MA USA","Chipotle 3299","Restaurants","Purchase","37.99","Sarah Olsen"
+04/02/2025,04/03/2025,"APPLE.COM/BILL ONE APPLE PARK WAY 866-712-7753 95014 CA USA","Apple Services","Other","Purchase","12.99","Roland Rao"

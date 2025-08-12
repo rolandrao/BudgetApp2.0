@@ -15,8 +15,9 @@ import { config } from '@/config';
 import { TransactionFilters } from '@/components/dashboard/transactions/transaction-filter';
 import { TransactionTable } from '@/components/dashboard/transactions/transaction-table';
 import type { Transaction } from '@/components/dashboard/transactions/transaction-table';
-import { EnvelopeSimple } from '@phosphor-icons/react';
+import { ChartBarHorizontal, EnvelopeSimple } from '@phosphor-icons/react';
 import { DatePicker } from '@mui/x-date-pickers/DatePicker';
+import SelectInput from '@mui/material/Select/SelectInput';
 
 // export const metadata = { title: `Customers | Dashboard | ${config.site.name}` } satisfies Metadata;
 
@@ -26,6 +27,10 @@ export default function Page(): React.JSX.Element {
   const [rowsPerPage, setRowsPerPage] = useState(25);
   const [sortColumn, setSortColumn] = useState<keyof Transaction | null>(null);
   const [sortOrder, setSortOrder] = useState<'asc' | 'desc'>('asc');
+  const [openChat, setOpenChat] = useState(false);
+  const [messages, setMessages] = useState<{ sender: 'user' | 'bot', text: string }[]>([]);
+  const [input, setInput] = useState('');
+  const chatWindowRef = React.useRef<HTMLDivElement>(null);
 
   const [startDate, setStartDate] = useState<dayjs.Dayjs | null>(null);
   const [endDate, setEndDate] = useState<dayjs.Dayjs | null>(null);
@@ -38,6 +43,7 @@ export default function Page(): React.JSX.Element {
   const [transactions, setTransactions] = useState<Transaction[]>([]);
   const [open, setOpen] = useState(false);
   const [openEdit, setOpenEdit] = useState(false);
+  const [aggData, setAggData] = useState({sum: null, avg: null, min: null, max: null});
   const [formData, setFormData] = useState({
     Timestamp: '',
     Amount: '',
@@ -79,7 +85,24 @@ export default function Page(): React.JSX.Element {
     const response = await fetch(`/api/getTransactions?${queryParams.toString()}`);
     const data = await response.json();
 
+    var sum = data.reduce((acc: number, transaction: Transaction) => acc + transaction.amount, 0);
+    var avg = sum / data.length;
+    var min = data.length > 0 ? Math.min(...data.map((transaction: Transaction) => transaction.amount)) : 0;
+    var max = data.length > 0 ? Math.max(...data.map((transaction: Transaction) => transaction.amount)) : 0;
+
+    if (min < 0) {
+      min = 0;
+    }
+
+    const aggData = {
+      sum: sum,
+      avg: avg,
+      min: min,
+      max: max
+    }
+
     setTransactions(data);
+    setAggData(aggData);
   }
 
   const handleClearFilters = () => {
@@ -231,14 +254,48 @@ export default function Page(): React.JSX.Element {
     setPage(0);
   }
 
-
   const paginatedTransactions = applyPagination(sortedTransactions, page, rowsPerPage);
+  
+
+  const handleSend = async () => {
+    if (!input.trim()) return;
+    setMessages((msgs) => [...msgs, { sender: 'user', text: input }]);
+    setInput('');
+    // Call your backend API with the question and transaction data
+    const res = await fetch('/api/chatbot', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ question: input, transactions }),
+    });
+    const data = await res.json();
+    setMessages((msgs) => [...msgs, { sender: 'bot', text: data.answer }]);
+    // Scroll to bottom
+    setTimeout(() => {
+      chatWindowRef.current?.scrollTo(0, chatWindowRef.current.scrollHeight);
+    }, 100);
+  };
 
   return (
     <>
-      <Button variant="contained" onClick={handleOpen} style={{ position: 'absolute', top: 100, right: 100 }}>
-        Add Record
-      </Button>
+      <Stack direction="row" spacing={4} sx={{ alignItems: 'center' }}>
+        <Typography variant="body1">
+          Sum: {new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(aggData.sum || 0)}
+        </Typography>
+        <Typography variant="body1">
+          Average: {new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(aggData.avg || 0)}
+        </Typography>
+        <Typography variant="body1">
+          Min: {new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(aggData.min || 0)}
+        </Typography>
+        <Typography variant="body1">
+          Max: {new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(aggData.max || 0)}
+        </Typography>
+        <Box sx={{ marginLeft: 'auto' }}>
+          <Button variant="contained" onClick={handleOpen}>
+            Add Record
+          </Button>
+        </Box>
+      </Stack>
       {/* THIS IS THE MODAL FOR EDITING DATA */}
       <Modal open={openEdit} onClose={handleCloseEdit}>
         <Box sx={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', width: 800, bgcolor: 'background.paper', boxShadow: 24, p: 4 }}>

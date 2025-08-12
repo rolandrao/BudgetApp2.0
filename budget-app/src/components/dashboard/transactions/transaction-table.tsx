@@ -20,9 +20,6 @@ import { useSelection } from '@/hooks/use-selection';
 import { Collapse } from '@mui/material';
 import { url } from 'inspector';
 
-function noop(): void {
-  // do nothing
-}
 
 export interface Transaction {
   id: string;

@@ -50,7 +50,7 @@ export function TransactionFilters({
   setShared,
   notes,
   setNotes,
-  handleClearFilters
+  handleClearFilters,
 }: TransactionFiltersProps): React.JSX.Element {
 
   const [inputValueNotes, setInputValueNotes] = React.useState(notes);
@@ -194,20 +194,17 @@ export function TransactionFilters({
           }
           sx={{ width: 600 }}
         />
-        <label >
-          <Button
-            variant="contained"
-            component="span"
-            startIcon={<X size={32} />}
-            onClick={() => {
-              handleClearFilters();
-              handleClearInputValues();
-            }}
-          >
-            Clear Filters
-          </Button>
-        </label>
-
+        <Button
+          variant="contained"
+          component="span"
+          startIcon={<X size={32} />}
+          onClick={() => {
+            handleClearFilters();
+            handleClearInputValues();
+          }}
+        >
+          Clear Filters
+        </Button>
       </Stack>
     </Card>
   );

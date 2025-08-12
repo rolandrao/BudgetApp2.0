@@ -1,3 +1,4 @@
+// "use client";
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
@@ -6,6 +7,8 @@ import GlobalStyles from '@mui/material/GlobalStyles';
 import { AuthGuard } from '@/components/auth/auth-guard';
 import { MainNav } from '@/components/dashboard/layout/main-nav';
 import { SideNav } from '@/components/dashboard/layout/side-nav';
+import { Chatbot } from '@/components/dashboard/transactions/chatbot';
+
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -42,6 +45,16 @@ export default function Layout({ children }: LayoutProps): React.JSX.Element {
             <Container maxWidth="xl" sx={{ py: '64px' }}>
               {children}
             </Container>
+            <Box
+              sx={{
+                position: 'fixed',
+                bottom: 20,
+                right: 20,
+                zIndex: 1000,
+              }}
+            >
+              <Chatbot />
+            </Box>
           </main>
         </Box>
       </Box>
