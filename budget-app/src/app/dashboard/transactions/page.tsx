@@ -17,7 +17,7 @@ import { TransactionTable } from '@/components/dashboard/transactions/transactio
 import type { Transaction } from '@/components/dashboard/transactions/transaction-table';
 import { ChartBarHorizontal, EnvelopeSimple } from '@phosphor-icons/react';
 import { DatePicker } from '@mui/x-date-pickers/DatePicker';
-import SelectInput from '@mui/material/Select/SelectInput';
+import SelectInput, { SelectChangeEvent } from '@mui/material/Select/SelectInput';
 
 // export const metadata = { title: `Customers | Dashboard | ${config.site.name}` } satisfies Metadata;
 
@@ -43,7 +43,12 @@ export default function Page(): React.JSX.Element {
   const [transactions, setTransactions] = useState<Transaction[]>([]);
   const [open, setOpen] = useState(false);
   const [openEdit, setOpenEdit] = useState(false);
-  const [aggData, setAggData] = useState({sum: null, avg: null, min: null, max: null});
+  const [aggData, setAggData] = useState<{ sum: number | null; avg: number | null; min: number | null; max: number | null }>({
+    sum: null,
+    avg: null,
+    min: null,
+    max: null,
+  });
   const [formData, setFormData] = useState({
     Timestamp: '',
     Amount: '',
@@ -125,7 +130,7 @@ export default function Page(): React.JSX.Element {
   const handleOpenEdit = () => setOpenEdit(true);
   const handleCloseEdit = () => setOpenEdit(false);
 
-  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+  const handleChange = (event: React.ChangeEvent<HTMLInputElement> | SelectChangeEvent<string>) => {
     const { name, value } = event.target;
     setFormData((prevData) => ({
       ...prevData,
@@ -133,7 +138,7 @@ export default function Page(): React.JSX.Element {
     }));
   };
 
-  const handleEditChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+  const handleEditChange = (event: React.ChangeEvent<HTMLInputElement> | SelectChangeEvent<string>) => {
     const { name, value } = event.target;
     setEditFormData((prevData) => ({
       ...prevData,
@@ -316,7 +321,7 @@ export default function Page(): React.JSX.Element {
                 label="Amount"
                 name="Amount"
                 value={editFormData.Amount}
-                onChange={handleEditChange}
+                onChange={(event) => handleEditChange(event as SelectChangeEvent<string>)}
                 fullWidth
                 margin="normal"
               />
@@ -327,7 +332,7 @@ export default function Page(): React.JSX.Element {
                 <Select
                   name="Roommate"
                   value={editFormData.Roommate}
-                  onChange={handleEditChange}
+                  onChange={(event) => handleEditChange(event as React.ChangeEvent<HTMLInputElement>)}
                 >
                   <MenuItem value="Roland">Roland</MenuItem>
                   <MenuItem value="Sarah">Sarah</MenuItem>
@@ -402,7 +407,7 @@ export default function Page(): React.JSX.Element {
                 label="Amount"
                 name="Amount"
                 value={formData.Amount}
-                onChange={handleChange}
+                onChange={(event) => handleChange(event as SelectChangeEvent<string>)}
                 fullWidth
                 margin="normal"
               />

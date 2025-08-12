@@ -26,7 +26,13 @@ def run_query(sql, params=None):
 if __name__ == "__main__":
     # Example usage:
     # Insert a test transaction
-    run_query("""SELECT SUM(CASE WHEN Roommate = 'Sarah' AND Shared = 1 THEN 1 ELSE 0 END) AS Sarah_Shared_Expenses
-FROM transactions
-WHERE strftime('%Y', Timestamp) = 2024 AND strftime('%m', Timestamp) = 6;
+    # run_query("""
+    #     SELECT SUM(Amount) FROM transactions
+    #     WHERE Timestamp LIKE '2023-07-%' AND Category='Shopping' AND Roommate='Sarah'
+    #     # UNION ALL
+    #     # SELECT SUM(Amount) FROM transactions
+    #     # WHERE Timestamp LIKE '2025-05-%' AND Category='Shopping' AND Roommate='Sarah';
+    # """)
+    run_query("""
+    SELECT * FROM transactions WHERE Timestamp LIKE '2023-07-%';
     """)

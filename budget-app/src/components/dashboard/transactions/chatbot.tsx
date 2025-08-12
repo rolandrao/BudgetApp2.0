@@ -8,6 +8,7 @@ export function Chatbot() {
   const [open, setOpen] = useState(false);
   const [messages, setMessages] = useState<{ sender: 'user' | 'bot', text: string }[]>([]);
   const [input, setInput] = useState('');
+  const [typing, setTyping] = useState(false);
   const chatWindowRef = useRef<HTMLDivElement>(null);
   const pathname = usePathname();
 
@@ -21,6 +22,7 @@ export function Chatbot() {
     const newMessages: { sender: 'user' | 'bot', text: string }[] = [...messages, { sender: 'user', text: input }];
     setMessages(newMessages);
     setInput('');
+    setTyping(true);
     // Call your backend API with the question and transaction data
     const res = await fetch('/api/chatbot', {
       method: 'POST',
@@ -29,6 +31,7 @@ export function Chatbot() {
     });
     const data = await res.json();
     setMessages((msgs) => [...msgs, { sender: 'bot', text: data.answer }]);
+    setTyping(false);
     // Scroll to bottom
     setTimeout(() => {
       chatWindowRef.current?.scrollTo(0, chatWindowRef.current.scrollHeight);
@@ -90,6 +93,24 @@ export function Chatbot() {
                 </Typography>
               </Box>
             ))}
+            {typing && (
+              <Box sx={{ textAlign: 'left', mb: 1 }}>
+                <Typography
+                  variant="body2"
+                  sx={{
+                    display: 'inline-block',
+                    bgcolor: '#e0e0e0',
+                    color: '#000',
+                    px: 1.5,
+                    py: 0.5,
+                    borderRadius: 1,
+                    fontStyle: 'italic',
+                  }}
+                >
+                  Bot is typing...
+                </Typography>
+              </Box>
+            )}
           </Box>
           <Box sx={{ display: 'flex', gap: 1 }}>
             <TextField

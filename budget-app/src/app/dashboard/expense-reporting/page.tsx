@@ -155,7 +155,15 @@ export default function Page(): React.JSX.Element {
     handleNextRow();
   };
 
-  const handleInputChange = (event: React.ChangeEvent<HTMLInputElement> | SelectChangeEvent<any>) => {
+  const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const { name, value } = event.target;
+    setCurrentRowData((prevData: any) => ({
+      ...prevData,
+      [name]: value,
+    }));
+  };
+  
+  const handleSelectChange = (event: SelectChangeEvent<any>) => {
     const { name, value } = event.target;
     setCurrentRowData((prevData: any) => ({
       ...prevData,

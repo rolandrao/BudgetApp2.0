@@ -55,7 +55,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
   const conversation = messages.map((m: { sender: string; text: any; }) => `${m.sender === 'user' ? 'User' : 'Assitant'}: ${m.text}`).join('\n');
 
   const sqlPrompt = `
-You are an assistant that translates questions about a transactions database into SQL queries.
+You are an assistant that translates questions about a transactions database into SQL queries from a sqlite database.
 
 The table is called 'transactions' and has columns: id, Timestamp, Amount, Category, Shared, Roommate, Notes.
 The Timestamp column is in ISO format (YYYY-MM-DD HH:MM:SS).
@@ -108,7 +108,10 @@ console.log("!!!!!!!!!!!!!!!!!!");
 User question: "${question}"
 SQL query: ${sqlQuery}
 SQL result: ${JSON.stringify(result)}
-Answer in natural language:
+Important information:
+  - Answer in natural language. 
+  - The amount column is a dollar value, so include the dollar sign in your answers. 
+  - If there is a SQL error explain the error in simple terms:
 `;
 
   const explainRes = await fetch('http://127.0.0.1:11434/api/generate', {

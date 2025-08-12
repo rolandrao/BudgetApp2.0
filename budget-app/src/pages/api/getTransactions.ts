@@ -10,6 +10,14 @@ async function openDb() {
   });
 }
 
+function toSqliteDateString(isoString: string): string {
+  if (!isoString) return '';
+  const date = new Date(isoString);
+  // Pad month, day, hour, minute, second
+  const pad = (n: number) => n.toString().padStart(2, '0');
+  return `${date.getFullYear()}-${pad(date.getMonth() + 1)}-${pad(date.getDate())} ${pad(date.getHours())}:${pad(date.getMinutes())}:${pad(date.getSeconds())}`;
+}
+
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
   const { startDate, endDate, category, minAmount, maxAmount, roommates, shared, notes } = req.query;
 
@@ -31,12 +39,12 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 
   if (startDate != '') {
     query += ' AND TIMESTAMP >= ?';
-    params.push(startDate as string);
+    params.push(toSqliteDateString(startDate as string));
   }
 
   if (endDate != '') {
     query += ' AND TIMESTAMP <= ?';
-    params.push(endDate as string);
+    params.push(toSqliteDateString(endDate as string));
   }
 
   if (category != '') {
@@ -65,6 +73,8 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
   }
 
   query += '\nORDER BY TIMESTAMP DESC';
+
+  console.log(query);
 
 
   const transactions = await db.all(query, params);
