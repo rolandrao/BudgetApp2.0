@@ -30,7 +30,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     );
 
 
-    const money_owed = ((rolandTotal.total-sarahTotal.total)/2) + 1390;
+    const money_owed = ((rolandTotal.total-sarahTotal.total)/2) + 390;
 
     res.status(200).json({
         money_owed: money_owed,

@@ -63,6 +63,8 @@ To extract the month or year from Timestamp in SQLite, use strftime('%m', Timest
 - Only return a SQL query, with no explanation or extra characters.
 - DO NOT use the EXTRACT, YEAR, or MONTH functions.
 - Do NOT include any Markdown formatting or code block tags (such as \`\`\`sql or \`\`\`).
+- If you suspect a category has been mentioned, make sure you capitlize the first letter before you create your SQL query.
+- If a roommate name is mentioned, make sure your capitilize the first letter before you create your SQL query.
 ${gasInstructions}
 
 Conversation so far:
